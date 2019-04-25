@@ -2,11 +2,10 @@ from bs4 import BeautifulSoup
 import urllib
 from urllib.request import urlopen
 import csv
-import numpy as np
-import pandas as pd
 from decimal import *
 import datetime
 import scraperHelpers as sh
+
 
 class psn_gamedata:
     name = ""
@@ -40,9 +39,22 @@ class psn_gamedata:
         
         self.starrating_num = len(wholestars) + (len(halfstars))* 0.5
         return
-        
     
-def scrape(platform,maxpages,outputto_csv,now):
+    def removeNonAscii(self):
+        self.name = sh.cleanAscii(self.name)
+        self.developer = sh.cleanAscii(self.developer)
+        self.releasedate = sh.cleanAscii(self.releasedate)
+        self.price = sh.cleanAscii(self.price)
+        self.requirements = sh.cleanAscii(self.requirements)
+        
+    def encodeStrings(self):
+        self.name = self.name.encode('utf-8')
+        self.developer = self.developer.encode('utf-8')
+        self.releasedate = self.releasedate.encode('utf-8')
+        self.price = self.price.encode('utf-8')
+        self.requirements = self.requirements.encode('utf-8')
+    
+def scrape(platform,maxpages,outputto_csv,now,test_mode):
     print("!!!!--- STARTING PSN SCRAPE OF:" + str(maxpages) + " PAGES ---!!!!")
 
     cpage = 1 #psn pages start with 1, not 0
@@ -51,58 +63,62 @@ def scrape(platform,maxpages,outputto_csv,now):
     psn_gallerypagedata = [] #the data for the main gallery pages. we scrape the urls from here and then ping each url.
     psn_gamepagedata =[] #the data for each pages inidividual game data
 
-    for i in range(cpage,maxpages):
-        
-        URL = "https://store.playstation.com/en-us/grid/STORE-MSF77008-VIRTUALREALITYG/"+str(cpage)
-    
-        user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7'
-        headers={'User-Agent':user_agent,} 
-        request=urllib.request.Request(URL,None,headers)
-        response = urllib.request.urlopen(request)
-        data = response.read()
-        
-        psn_gallerypagedata.append(data)
-        sh.randomsleep()
-        
-        print("done getting page# " + str(cpage))
-        cpage+=1       
+    if test_mode is False:
+        for i in range(cpage,maxpages):
+            
+            URL = "https://store.playstation.com/en-us/grid/STORE-MSF77008-VIRTUALREALITYG/"+str(cpage)
 
-    #Use BeautifulSoup to parse the PSN data. In this case comb the catalog and get the URLs for the games
-    for data in psn_gallerypagedata:
-        psn_gallerypage = BeautifulSoup(data,'html.parser')
-        
-        for games in psn_gallerypage.find_all('div', class_='grid-cell grid-cell--game'): #get all of the game cells from the main product page
-            gameURL = games.find('a', class_='internal-app-link ember-view').get('href')
-            gameURL = psn_url_prefix + gameURL;
-            psngameurls.append(gameURL)
+            if test_mode is False:
+                localFilename = "psn_gallery_" + str(cpage) + ".html"
+                data = sh.makeURLRequest(URL, True,localDir,localFilename,5,0)
+                sh.randomsleep()
+            
+            psn_gallerypagedata.append(data)
+            
+            print("done getting page# " + str(cpage))
+            cpage+=1       
+            
+#Comb the catalog and get the URLs for the games - Does not run in test_mode
+    if test_mode is False:
+        for data in psn_gallerypagedata:
+            psn_gallerypage = BeautifulSoup(data,'html.parser')
+            
+            for games in psn_gallerypage.find_all('div', class_='grid-cell grid-cell--game'): #get all of the game cells from the main product page
+                gameURL = games.find('a', class_='internal-app-link ember-view').get('href')
+                gameURL = psn_url_prefix + gameURL;
+                psngameurls.append(gameURL)
 
-    #Then visit each game URL individually and grab the page data for each game
+#Then visit each game URL individually and grab the page data for each game- In test_mode we just grab the directory contents
     count = 0
+    if test_mode is False:
+        for g in psngameurls:       
+            URL = g
+            localFilename ="psn_game_" + str(count) + ".html"
+                
+            if test_mode is False:
+                data = sh.makeURLRequest(URL, True,localDir,localFilename,5,0)
+                psn_gamepagedata.append(data)
+                sh.randomsleep()
+    else:
+        localDir = "psn_games_html/"
+        psn_gamepagedata = sh.getLocalHTMLCache(localDir)
 
-    for g in psngameurls: 
-        URL = g
-        user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7'
-        headers={'User-Agent':user_agent,} 
-        request=urllib.request.Request(URL,None,headers)
-        response = urllib.request.urlopen(request)
-        data = response.read()
-        
-        psn_gamepagedata.append(data)
-        count+=1
-        print(URL)
-        sh.randomsleep()
-        
-        print("done getting psn game data: " + str(count) + "::" + str(len(psngameurls)))
+    count+=1
+            
+    print("done getting psn game data: " + str(count) + "::" + str(len(psngameurls)))
         
     #Then iterate over that psn_gamepagedata and grab the game info
     allpsndata =[]
     c = 0
+    print("Starting scrape of individual game pages. Total game pages: " + str(len(psn_gamepagedata)))
     for g in psn_gamepagedata:
-        psn_gamepage = BeautifulSoup(g,'html.parser')
+        psn_gamepage = BeautifulSoup(g,'html.parser',from_encoding="utf-8")
         tp = psn_gamedata()
 
         tp.name = psn_gamepage.find('h2', class_='pdp__title').text
         sh.removeExcessCharacters(tp.name)
+        print("Scraping " + tp.name + ", " + str(c) + " of " + str(len(psn_gamepagedata)))
+
         
 #This is the dumbest. There are several h5 classes that contain the info. The first is the title, the second has several spans whic h contain the release date and number of ratings        
         providerInfoWhole = psn_gamepage.find('div', class_='provider-info')
@@ -129,15 +145,19 @@ def scrape(platform,maxpages,outputto_csv,now):
         sh.removeExcessCharacters(tp.numratings)
         sh.removeWhiteSpace(tp.numratings)
         tp.numratings = sh.returnOnlyNumerals(tp.numratings)
-#End. Phew.
         
-        tp.psnurl=psngameurls[c] #i hate doing stuff like this but I also dont wanna create a new data class and rewrite all of this. 
-        
+        if test_mode is False: #psn_gameurls doesnt exist in test mode!
+            tp.psnurl=psngameurls[c] #i hate doing stuff like this but I also dont wanna create a new data class and rewrite all of this. 
+        else:
+            tp.psnurl="TESTMODE"
+            
         techspecs = []
         techspecs = psn_gamepage.find_all('div', class_='tech-specs__menu-header')
-        tp.requirements = techspecs[len(techSpecs)-1].text #It's always the last entry....in a collection of headers.....stored as divs. Oh, the humanity!
-
-        sh.removeExcessCharacters(tp.requirements)
+        try:
+            tp.requirements = techspecs[len(techSpecs)-1].text #It's always the last entry....in a collection of headers.....stored as divs. Oh, the humanity!
+            sh.removeExcessCharacters(tp.requirements)
+        except:
+            tp.requirements = "N/A"
         
         tp.computeStarRating()
         allpsndata.append(tp)
@@ -145,17 +165,19 @@ def scrape(platform,maxpages,outputto_csv,now):
         
 
     for g in allpsndata:
-        g.displayData()
+        #g.displayData()
+        g.removeNonAscii()
+        #g.encodeStrings()
     
     dt = now.strftime("%Y-%m-%d")
     filename = dt + "_PSN_PSVR"
     with open(filename + '.csv', mode='w') as csvfile:
         
         g_writer = csv.writer(csvfile, delimiter=',', quotechar='"', quoting=csv.QUOTE_MINIMAL)
-        g_writer.writerow(["Game Name","Release Date","User Score","NUMBER OF RATINGS","VR Required?"]) #header row
+        g_writer.writerow(["Game Name","Release Date","Price","Developer","PSN Stars","NUMBER OF RATINGS","VR Requiredments"]) #header row
         
         for g in allpsndata:
-            g_writer.writerow([g.name,g.releasedate, g.starrating_num,g.numratings,g.requirements])
+            g_writer.writerow([g.name,g.releasedate,g.price,g.developer, g.starrating_num,g.numratings,g.requirements])
     
         
     print("PSN SCRAPE COMPLETE; CSV LOCATED AT" + filename)

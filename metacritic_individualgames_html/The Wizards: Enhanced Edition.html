@@ -1,0 +1,2511 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN"
+   "https://www.w3.org/TR/html4/strict.dtd">
+<html xml:lang="en">
+<head>
+        	<title>The Wizards: Enhanced Edition for PlayStation 4 Reviews - Metacritic</title>
+	
+    
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+
+    
+    <meta name="description" content="Metacritic Game Reviews, The Wizards: Enhanced Edition for PlayStation 4, Become a powerful sorcerer with a host of mighty spells at your fingertips and protect the realm of Meliora! The Wizards is an acclaimed ...">
+
+    
+    
+    <meta name="viewport" content="width=1024">
+
+
+    
+    
+
+    
+    <meta name="application-name" content="Metacritic">
+    <meta name="msapplication-TileColor" content="#000000">
+    <meta name="msapplication-TileImage" content="/images/win8tile/76bf1426-2886-4b87-ae1c-06424b6bb8a2.png">
+
+    
+                        <meta property="og:title" content="The Wizards: Enhanced Edition">
+                    <meta property="og:type" content="game">
+                    <meta property="og:url" content="https://www.metacritic.com/game/playstation-4/the-wizards-enhanced-edition">
+                    <meta property="og:image" content="https://static.metacritic.com/images/products/games/6/793ec77ce95d160576d4635318fc3511-98.jpg">
+                    <meta property="og:site_name" content="Metacritic">
+                    <meta property="fb:app_id" content="123113677890173">
+                    <meta property="og:description" content="The Wizards: Enhanced Edition for PlayStation 4 game reviews &amp; Metacritic score: Become a powerful sorcerer with a host of mighty spells at your fingertips and protect the realm of Meliora! The Wizards is an acclaimed action-adventure game w...">
+            
+    
+    
+
+    
+
+    
+    <link rel="stylesheet" href="/css/fonts/proxima-nova/stylesheet.css" type="text/css" charset="utf-8" />
+    
+    <link rel="stylesheet" href="/css/global.min.1555004917.css" type="text/css">
+<link rel="stylesheet" href="/css/product/base.min.1555004825.css" type="text/css">
+
+
+    
+    <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+
+    
+     
+        <link rel="canonical" href="https://www.metacritic.com/game/playstation-4/the-wizards-enhanced-edition" />
+        
+    
+    
+    
+        
+    
+    <script type="text/javascript">
+        
+        (function(id){function append(scriptid,url,async){var d=document,sn='script',f=d.getElementsByTagName(sn)[0];if(!f)f=d.head;var s=d.createElement(sn);s.async=!0;s.id=scriptid;s.src=url;f.parentNode.insertBefore(s,f)}
+        function getRootDomain(){var parts=window.location.hostname.split('.');if(parts.length===2)rootDomain=parts[0];else if(parts.length>2){var part=parts[parts.length-2];if(part==='com'||part==='co'){rootDomain=parts[parts.length-3]}
+        else{rootDomain=part}}
+        return rootDomain}
+        window.evidon={};window.evidon.id=id;var cdn='//c.evidon.com/',rootDomain=getRootDomain(),noticecdn=cdn+'sitenotice/';append('evidon-notice',noticecdn+'evidon-sitenotice-tag.js',!1);append('evidon-location',cdn+'geo/country.js',!0);append('evidon-themes',noticecdn+id+'/snthemes.js',!0);if(rootDomain)append('evidon-settings',noticecdn+id+'/'+rootDomain+'/settings.js',!0);
+        window.evidon.priorConsentCallback=function(){
+            // IX Ad Bidding
+            append('ix-lib',  (('https:' == document.location.protocol)?'https:':'http:') + '///js-sec.indexww.com/ht/ls-metacritic.js', true);
+            // GPT/DFP ads
+            append('gpt-lib', (('https:' == document.location.protocol)?'https:':'http:') + '//www.googletagservices.com/tag/js/gpt.js', true);
+            // Sharethrough
+            append('st-lib', (('https:' == document.location.protocol)?'https:':'http:') + '//native.sharethrough.com/assets/tag.js', true);
+            // Google Analytics
+            append('ga-lib', (('https:' == document.location.protocol)?'https://ssl':'http://www') + '.google-analytics.com/ga.js', true);
+            // Omniture
+            window.gdprConsent = true;
+            if (typeof om == 'object' && typeof om.fireGdprTags != 'undefined') { om.fireGdprTags(); }
+            // Taboola
+                        load_vendor_taboola();
+                    }
+        window.evidon.closeCallback=function(){}
+        window.evidon.consentWithdrawnCallback=function(){}})(425)
+        
+    </script>
+
+    
+    
+    
+    <script type="text/javascript" src="/js/global.min.1555004917.js"></script>
+
+
+    <script type="text/javascript">
+        
+        
+        var googletag = googletag || {};
+        googletag.cmd = googletag.cmd || [];
+        window.metac_ads_pushdisplay = window.metac_ads_pushdisplay || [];
+        window.metac_gallery_ads_pushdisplay = window.metac_gallery_ads_pushdisplay || [];
+        window.metac_hover_ads_pushdisplay = window.metac_hover_ads_pushdisplay || [];
+        
+    </script>
+
+    <script type="text/javascript">
+        
+    	MC_USER_LOGGED_IN = false;
+        
+        
+                    
+            window._taboola = window._taboola || [];
+            function load_vendor_taboola(){
+                _taboola.push({
+                    other : 'auto'
+                });
+                !function (e, f, u) {
+                    e.async = 1;
+                    e.src = u;
+                    f.parentNode.insertBefore(e, f);
+                }(document.createElement('script'),
+                document.getElementsByTagName('script')[0],
+                '//cdn.taboola.com/libtrc/cbsinteractive-metacritic/loader.js');
+            }
+            
+            </script>
+
+    
+    <script src="//vidtech.cbsinteractive.com/uvpjs/2.9.52/CBSI-PLAYER.js"></script>
+    <script type="text/javascript" src="//imasdk.googleapis.com/js/sdkloader/ima3.js"></script>
+</head>
+<body>
+
+
+
+
+<div id="site_layout">
+    <div id="masthead">
+        
+
+                    <div id="nav_ad_wrapper" class="skybox-auto-collapse skybox-closeBtn skybox-videoStop">
+                
+                        
+                        <div id="nav_ad" class="ad_unit">
+                            
+                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_nav_ad = googletag.defineSlot("/8264/aw-metacritic/games",[[5,5],[7,7]], "nav_ad").addService(googletag.pubads()).setTargeting("pos", "nav").setCollapseEmptyDiv(true, true);
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("nav_ad");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+            </div>
+        
+        <div id="content_header_wrapper">
+            <header id="top_header">
+    <nav id="primary_nav">
+        <nav id="primary_logo" class="primary_nav_item">
+            <a href="https://www.metacritic.com"><img src="/images/icons/dark_logo.png" alt="Metacritic logo"></a>
+        </nav>
+
+        <nav id="primary_search" class="primary_nav_item">
+            <div class="rounded_field">
+                <div class="imgs">
+                    <img class="inactive" src="/images/icons/search_inactive.png" alt="search">
+                    <img class="active" src="/images/icons/search_active.png" alt="search">
+                </div>
+                <div class="field innerLabel">
+                    <div class="input_wrapper">
+                        <form action="/search" method="post" autocomplete="off">
+                            <label for="primary_search_box">search...</label>
+                            <input name="search_term" id="primary_search_box" autocomplete="off"
+                                                            >
+                            <input type="hidden" name="search_filter" value="all">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div id="primary_search_results">
+
+            </div>
+        </nav>
+
+                    <nav id="primary_nav_item_movies" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a href="https://www.metacritic.com/movie">
+                                                    Movies
+                                            </a>
+                </span>
+
+                
+                                            <nav class="primary_drop_down">
+                            <span class="cutout_wrapper">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                            <div class="primary_feature">
+                                                                                                                                                
+                                        <a href="/feature/hulu-best-new-movies-and-shows">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/hulu201905-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/hulu201905-180.jpg" alt="What to Watch Now on Hulu Image" />
+                                        </a>
+                                        <span class="primary_feature_text"><a href="/feature/hulu-best-new-movies-and-shows">What to Watch Now on Hulu</a></span>
+                                                                                                </div>
+                            <nav class="primary_dditems">
+                                <a href="/feature/movie">More Reports</a>
+                                <a href="/movie">All Movies &gt;</a>
+                                <a href="/browse/movies/release-date/theaters/date">In Theaters</a>
+                                <a href="/browse/movies/release-date/coming-soon/date">Coming Soon</a>
+                                <a href="/browse/dvds/release-date/new-releases/date">New to DVD & Streaming</a>
+                                <a href="/browse/movies/score/metascore/all/filtered/netflix">Best of Netflix</a>
+                                <a href="/browse/movies/score/metascore/all/filtered/piv">Best of Amazon</a>
+                                <a href="/browse/movies/score/metascore/all/filtered">Best Movies of All Time</a>
+                                <a href="/browse/movies/genre/date">Browse Movies by Genre</a>
+                            </nav>
+                        </nav>
+                                </nav>
+                    <nav id="primary_nav_item_games" class="primary_nav_item selected">
+                <span class="primary_nav_text">
+                    <a href="https://www.metacritic.com/game">
+                                                    Games
+                                            </a>
+                </span>
+
+                                    <span class="cutout_wrapper selected">
+                        <i class="fa fa-caret-down" aria-hidden="true"></i>
+                    </span>
+                
+                                            <nav class="primary_drop_down">
+                            <span class="cutout_wrapper">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                            <div class="primary_feature">
+                                                                                                                                                
+                                        <a href="/feature/major-upcoming-video-game-release-dates-xbox-ps4-pc-switch">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/gamescorecard_2019_spring2-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/gamescorecard_2019_spring2-180.jpg" alt="Notable Video Game Releases: New and Upcoming Image" />
+                                        </a>
+                                        <span class="primary_feature_text"><a href="/feature/major-upcoming-video-game-release-dates-xbox-ps4-pc-switch">Notable Video Game Releases: New and Upcoming</a></span>
+                                                                                                </div>
+                            <nav class="primary_dditems">
+                                <a href="/feature/game">More Reports</a>
+                                <a href="/game">All Games &gt;</a>
+                                <a href="/game/playstation-4">PS4</a>
+                                <a href="/game/xbox-one">Xbox One</a>
+                                <a href="/game/pc">PC</a>
+                                <a href="/game/switch">Switch</a>
+                                <a href="/game/wii-u">Wii U</a>
+                                <a href="/game/3ds">3DS</a>
+                                <a href="/game/playstation-vita">PS Vita</a>
+                                <a href="/game/ios">iOS</a>
+                                <a href="/game/legacy">Legacy</a>
+                            </nav>
+                        </nav>
+                                </nav>
+                    <nav id="primary_nav_item_tv" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a href="https://www.metacritic.com/tv">
+                                                    TV
+                                            </a>
+                </span>
+
+                
+                                            <nav class="primary_drop_down">
+                            <span class="cutout_wrapper">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                            <div class="primary_feature">
+                                                                                                                                                
+                                        <a href="/feature/now-streaming-on-amazon-instant-video">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/amazon201905-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/amazon201905-180.jpg" alt="What to Watch Now on Prime Video Image" />
+                                        </a>
+                                        <span class="primary_feature_text"><a href="/feature/now-streaming-on-amazon-instant-video">What to Watch Now on Prime Video</a></span>
+                                                                                                </div>
+                            <nav class="primary_dditems">
+                                <a href="/feature/tv">More Reports</a>
+                                <a href="/tv">All TV &gt;</a>
+                                <a href="/browse/tv/release-date/new-series/date">New Shows</a>
+                                <a href="/browse/tv/score/metascore/all/filtered/netflix">Best of Netflix</a>
+                                <a href="/browse/tv/score/metascore/all/filtered/piv">Best of Amazon</a>
+                                <a href="/browse/tv/score/metascore/all/filtered">Best TV Shows</a>
+                                <a href="/browse/tv/genre/date">Browse TV by Genre</a>
+                            </nav>
+                        </nav>
+                                </nav>
+                    <nav id="primary_nav_item_music" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a href="https://www.metacritic.com/music">
+                                                    Music
+                                            </a>
+                </span>
+
+                
+                                            <nav class="primary_drop_down">
+                            <span class="cutout_wrapper">
+                                <i class="fa fa-caret-down" aria-hidden="true"></i>
+                            </span>
+                            <div class="primary_feature">
+                                                                                                                                                
+                                        <a href="/feature/best-of-march-2019">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/bestof_2019_03-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/bestof_2019_03-180.jpg" alt="Best of March 2019: Top Albums, Games, Movies & TV Image" />
+                                        </a>
+                                        <span class="primary_feature_text"><a href="/feature/best-of-march-2019">Best of March 2019: Top Albums, Games, Movies & TV</a></span>
+                                                                                                </div>
+                            <nav class="primary_dditems">
+                                <a href="/feature/album">More Reports</a>
+                                <a href="/music">All Music &gt;</a>
+                                <a href="/browse/albums/release-date/new-releases/date">New Releases</a>
+                                <a href="/browse/albums/release-date/coming-soon/date">Coming Soon</a>
+                                <a href="/browse/albums/score/metascore/90day/filtered">Best New Albums</a>
+                                <a href="/browse/albums/score/metascore/all/filtered">Best Albums of All Time</a>
+                                <a href="/browse/albums/genre/date">Browse Music by Genre</a>
+                            </nav>
+                        </nav>
+                                </nav>
+                    <nav id="primary_nav_item_features" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a href="https://www.metacritic.com/feature">
+                                                    Reports
+                                            </a>
+                </span>
+
+                
+                                </nav>
+        
+        <nav id="primary_menu_item_enter_search" class="">
+            <span class="">
+                Enter to Search
+            </span>
+        </nav>
+
+
+        
+                    <nav id="primary_menu_item_create" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a id="signup" href="https://secure.metacritic.com/signup">+ Create Account</a>
+                </span>
+            </nav>
+            <nav id="primary_menu_item_login" class="primary_nav_item">
+                <span class="primary_nav_text">
+                    <a id="login" href="https://secure.metacritic.com/login">Login</a>
+                </span>
+            </nav>
+                
+    </nav>
+
+            <nav id="secondary_nav" class="clearfix hgrayblue inset_left2 inset_right2">
+            <div id="primary_social" class="social_round">
+                <span>follow on</span>
+                <a href="https://twitter.com/metacritic" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+                <a href="https://www.facebook.com/Metacritic" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+            </div>
+
+                                                <nav id="secondary_nav_games" class="secondary_nav_list">
+                        <a href="/browse/games/release-date/new-releases/all/date">New Releases</a>
+                        <a href="/browse/games/release-date/coming-soon/all/date">Coming Soon</a>
+                        <a href="/browse/games/score/metascore/90day/all/filtered">Best Games</a>
+                        <a href="/browse/games/publication/reviewed">Publications</a>
+                        <a href="/browse/games/company/reviewed">Publishers</a>
+                        <a href="/browse/games/trailers/all/date">Trailers</a>
+                    </nav>
+                                    </nav>
+        <header id="primary_backdrop">
+    </header>
+</header>
+
+        </div>
+    </div>
+
+                        <div id="mantle_skin" class="site_gutters">
+                
+                        
+                        <div id="skin" class="ad_unit">
+                            
+                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_skin = googletag.defineSlot("/8264/aw-metacritic/games",[1600,1000], "skin").addService(googletag.pubads()).setTargeting("pos", "top");
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("skin");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+         <div id="gutters" class="site_gutters">     
+         <div id="gutters_mid" class="site_gutters">     
+             <div id="gutters_btm" class="site_gutters">     
+                 <div id="gutters_top" class="site_gutters">     
+                     <div id="container">
+
+
+    <div id="superleader" class="leader">
+                        
+                            <div id="leader_top_wrapper" class="ad_height_min">
+                        <div id="leader_plus_top" class="ad_unit">
+                            
+                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_leader_plus_top = googletag.defineSlot("/8264/aw-metacritic/games",[[728,90],[970,66],[970,250],[728,91],[321,31],[7,7]], "leader_plus_top").addService(googletag.pubads()).setTargeting("pos", "top");
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("leader_plus_top");
+                                                            </script>
+                                        </div>
+                            </div>
+                        
+
+
+</div>
+
+
+
+<div id="col_layout" class="col_layout">
+        <div id="main_content" class="content_section mpu_layout">
+                <div class="layout">
+            
+            <div id="gutters" class="site_gutters">
+
+            
+            
+            
+            
+                        <div id="main" class="col main_col">
+                <div>
+
+
+
+
+
+
+<script type="application/ld+json">
+    {
+        "@context" : "https://schema.org",
+        "@type" : "VideoGame",
+                "applicationCategory" : "Game",
+                "name" : "The Wizards: Enhanced Edition",
+        "description" : "Become a powerful sorcerer with a host of mighty spells at your fingertips and protect the realm of Meliora! The Wizards is an acclaimed action-adventure game with a unique gesture-based spellcasting system, designed for PS Move controllers.",
+        "datePublished" : "March 12, 2019",
+        "url" : "https://www.metacritic.com/game/playstation-4/the-wizards-enhanced-edition",
+        "image" : "https://static.metacritic.com/images/products/games/6/793ec77ce95d160576d4635318fc3511-98.jpg"
+        
+        
+                            ,"aggregateRating" : {
+                "@type" : "AggregateRating",
+                "bestRating" : "100",
+                "worstRating" : "0",
+                "ratingValue" : "69"
+                                ,"ratingCount" : "18"
+                            }
+                                    ,"contentRating" : "ESRB E10+"
+                                    ,"gamePlatform" : "PlayStation 4"
+            ,"operatingSystem" : "PlayStation 4"
+                                                ,"publisher" : [
+                                                {
+                        "@type":"Organization",
+                        "name": "Carbon Studio",
+                        "url": "https://www.metacritic.com/company/carbon-studio"
+                    }                                                            ]
+                            ,"genre" : [
+                             "Action"
+                 ,                             "Shooter"
+                 ,                             "Light Gun"
+                                         ]
+            }
+</script>
+
+<div class="content_head product_content_head game_content_head">
+                
+                
+        <div class="sharing " data-mc-refid="538456" data-mc-reftid="30" >
+    
+    <a class="sharing-facebook" title="Share on Facebook" rel="nofollow noopener popup:external" data-mc-social-url="https://www.metacritic.com/game/playstation-4/the-wizards-enhanced-edition?ftag=fbsoshares" href="javascript:void(0);"><span class="fa fa-fw fa-facebook"></span></a><a class="sharing-twitter" title="Share on Twitter" rel="nofollow noopener popup:external" data-mc-social-url="https://www.metacritic.com/game/playstation-4/the-wizards-enhanced-edition" data-mc-tweet-prefix="https://twitter.com/intent/tweet?via=metacritic&text=The%20Wizards%3A%20Enhanced%20Edition%20for%20PlayStation%204%20Reviews" href="#" target="_blank"><span class="fa fa-fw fa-twitter"></span></a><a class="sharing-reddit" title="Share on Reddit" rel="nofollow noopener popup:external" data-mc-social-track-id="6" target="_blank" href="https://www.reddit.com/submit?url=https%3A%2F%2Fwww.metacritic.com%2Fgame%2Fplaystation-4%2Fthe-wizards-enhanced-edition%3Fftag%3Dredsoshares&title=The%20Wizards%3A%20Enhanced%20Edition%20for%20PlayStation%204%20Reviews"><span class="fa fa-fw fa-reddit-alien"></span></a><a class="sharing-pinterest" title="Share on Pinterest" rel="nofollow noopener popup:external" data-mc-social-track-id="5" target="_blank" href="//pinterest.com/pin/create/link/?url=https%3A%2F%2Fwww.metacritic.com%2Fgame%2Fplaystation-4%2Fthe-wizards-enhanced-edition%3Fftag%3Dpinsoshares&description=The%20Wizards%3A%20Enhanced%20Edition%20for%20PlayStation%204%20Reviews&media=https://static.metacritic.com/images/products/games/6/793ec77ce95d160576d4635318fc3511.jpg"><span class="fa fa-fw fa-pinterest"></span></a></div>
+
+
+        <div class="product_title">
+                    <a href="/game/playstation-4/the-wizards-enhanced-edition" class="hover_none">
+                                <h1>The Wizards: Enhanced Edition</h1>
+                            </a>
+                            <span class="platform">
+                		        <a href="/game/playstation-4">
+                                                        PlayStation 4
+                                                    </a>
+                		    </span>
+		    </div>
+    <div class="product_data">
+        <ul class="summary_details">
+                            <li class="summary_detail publisher" >
+                    <span class="label">Publisher:</span>
+                    <span class="data">
+											<a href="/company/carbon-studio"  >
+                                                        Carbon Studio
+                                                    </a>
+					                    </span>
+                </li>
+                                        <li class="summary_detail release_data">
+                    <span class="label">Release Date:</span>
+                    <span class="data" >Mar 12, 2019</span>
+                </li>
+                                                            </ul>
+    </div>
+</div>
+
+
+
+    <div class="content_nav">
+        <ul class="nav_items content_nav">
+                            <li class="nav nav_summary active_nav first_nav">
+                    <span class="nav_item">
+                        <span class="nav_item_wrap">
+                                                            <span class="action">Summary</span>
+                                                    </span>
+                    </span>
+                </li>
+                            <li class="nav nav_critic_reviews">
+                    <span class="nav_item">
+                        <span class="nav_item_wrap">
+                                                            <a class="action" href="/game/playstation-4/the-wizards-enhanced-edition/critic-reviews">Critic Reviews</a>
+                                                    </span>
+                    </span>
+                </li>
+                            <li class="nav nav_user_reviews">
+                    <span class="nav_item">
+                        <span class="nav_item_wrap">
+                                                            <a class="action" href="/game/playstation-4/the-wizards-enhanced-edition/user-reviews">User Reviews</a>
+                                                    </span>
+                    </span>
+                </li>
+                            <li class="nav nav_details">
+                    <span class="nav_item">
+                        <span class="nav_item_wrap">
+                                                            <a class="action" href="/game/playstation-4/the-wizards-enhanced-edition/details">Details &amp; Credits</a>
+                                                    </span>
+                    </span>
+                </li>
+                            <li class="nav nav_trailers last_nav">
+                    <span class="nav_item">
+                        <span class="nav_item_wrap">
+                                                            <span class="disabled">Trailers &amp; Videos</span>
+                                                    </span>
+                    </span>
+                </li>
+                    </ul>
+    </div>
+
+
+
+
+
+
+
+
+    
+<div class="module product_data product_data_summary">
+    <div class="module_wrap has_image has_large_image">
+                    <div class="product_media large_media">
+                <div class="product_image large_image must_play">
+                                        <img class="product_image large_image" src="https://static.metacritic.com/images/products/games/6/793ec77ce95d160576d4635318fc3511-98.jpg" alt="The Wizards: Enhanced Edition Image"/>
+                                    </div>
+                            </div>
+                <div class="summary_wrap">
+            
+            
+            <div class="section product_scores">
+                    <div class="details main_details">
+                            
+<div class="score_summary metascore_summary">
+    <div class="metascore_wrap highlight_metascore" >
+        <div class="label">Metascore</div>
+                    
+            
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/the-wizards-enhanced-edition/critic-reviews">
+<div class="metascore_w xlarge game mixed"><meta itemprop="bestRating" content="100"><span itemprop="ratingValue">69</span></div>
+    </a>
+
+
+            
+                <div class="summary">
+            <p>
+                <span class="desc">
+                                            Mixed or average reviews
+                                    </span>
+						<span class="count">
+				<span class="separator"> - </span>
+                <span class="based">based on</span>
+									<a href="/game/playstation-4/the-wizards-enhanced-edition/critic-reviews">
+                                                    <span >
+                                18
+                            </span> Critics                                            </a>
+							</span>
+			                                <span class="help"><a href="/about-metascores">What's this?</a></span>            </p>
+        </div>
+    </div>
+</div>
+
+    </div>
+            <div class="details side_details">
+                                                                            
+    <div class="score_summary">
+    <div class="userscore_wrap feature_userscore">
+        <div class="label">User Score</div>
+                
+    <a class="metascore_anchor" href="/game/playstation-4/the-wizards-enhanced-edition/user-reviews">
+<div class="metascore_w user large game mixed">6.6</div>
+    </a>
+
+
+        
+        <div class="summary">
+            <p><span class="desc">Mixed or average reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <a href="/game/playstation-4/the-wizards-enhanced-edition/user-reviews">10 Ratings</a></span></p>
+        </div>
+    </div>
+</div>
+                                                                
+                        
+                        <div class="score_summary yourscore_summary {'review_id': '0', 'request_url': '/jl/rate/set-rating?product_type=game&title=The+Wizards%3A+Enhanced+Edition&release_date=2019-03-12+00%3A00%3A00&ref_type_id=30&ref_id=538456'} "  >
+    <div class="yourscore_wrap">
+        <div class="label label_game">Your Score</div>
+        <div class="data yourscore">
+            <span class="score_value">0</span>
+            <span class="score_total">out of 10</span>
+        </div>
+        <div class="summary feedback has_feedback">
+                    <p class="rating_error"></p>
+                    </div>
+
+    
+        <div class="rating_picker rating_picker_game">
+                    <div class="rating_picker_std">
+                <div class="rating_label">Rate this:</div>
+                <ul class="rating_actions rating_values rating_values_game ">
+                <input type="hidden" name="csrf" value="e3f11e8991772729bc10e24c8493f16f" />
+                                    <li class="rating_value_item rating_value_100">
+                        <div class="rating_action rating_action_game rating_action_100 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=10&ref_type_id=30&ref_id=538456"
+                                                      title="Rate 10 out of 10">
+                                <span class="rating_value">10</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_90">
+                        <div class="rating_action rating_action_game rating_action_90 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=9&ref_type_id=30&ref_id=538456"
+                                                      title="Rate 9 out of 10">
+                                <span class="rating_value">9</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_80">
+                        <div class="rating_action rating_action_game rating_action_80 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=8&ref_type_id=30&ref_id=538456"
+                                                      title="Rate 8 out of 10">
+                                <span class="rating_value">8</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_70">
+                        <div class="rating_action rating_action_game rating_action_70 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=7&ref_type_id=30&ref_id=538456"
+                                                      title="Rate 7 out of 10">
+                                <span class="rating_value">7</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_60">
+                        <div class="rating_action rating_action_game rating_action_60 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=6&ref_type_id=30&ref_id=538456"
+                                                      title="Rate 6 out of 10">
+                                <span class="rating_value">6</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_50">
+                        <div class="rating_action rating_action_game rating_action_50 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=5&ref_type_id=30&ref_id=538456"
+                                                      title="Rate 5 out of 10">
+                                <span class="rating_value">5</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_40">
+                        <div class="rating_action rating_action_game rating_action_40 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=4&ref_type_id=30&ref_id=538456"
+                                                      title="Rate 4 out of 10">
+                                <span class="rating_value">4</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_30">
+                        <div class="rating_action rating_action_game rating_action_30 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=3&ref_type_id=30&ref_id=538456"
+                                                      title="Rate 3 out of 10">
+                                <span class="rating_value">3</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_20">
+                        <div class="rating_action rating_action_game rating_action_20 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=2&ref_type_id=30&ref_id=538456"
+                                                      title="Rate 2 out of 10">
+                                <span class="rating_value">2</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_10">
+                        <div class="rating_action rating_action_game rating_action_10 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=1&ref_type_id=30&ref_id=538456"
+                                                      title="Rate 1 out of 10">
+                                <span class="rating_value">1</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_0">
+                        <div class="rating_action rating_action_game rating_action_0 "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=0&ref_type_id=30&ref_id=538456"
+                                                      title="Rate 0 out of 10">
+                                <span class="rating_value">0</span>
+                        </div>
+                    </li>
+                                    <li class="rating_value_item rating_value_delete">
+                        <div class="rating_action rating_action_game rating_action_delete "
+                           rel="nofollow"
+                                                          data-rateref="/jl/rate/set-rating?score=-1&ref_type_id=30&ref_id=538456"
+                                                      title="Delete rating">
+                                <span class="rating_value">0</span>
+                        </div>
+                    </li>
+                                </ul>
+            </div>
+
+        
+            <div class="rating_values rating_values_game scale disabled">
+                <div class="status"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+    
+<div class="rating_signin_tmpl">
+    <div class="message">
+        Log in to finish rating <span class="product_name">The Wizards: Enhanced Edition</span>
+    </div>
+
+    <div class="product_data">
+        <div class="product_media">
+            <div class="product_image large_image">
+                <img class="product_image large_image" src="https://static.metacritic.com/images/products/games/6/793ec77ce95d160576d4635318fc3511-98.jpg"
+                     alt="The Wizards: Enhanced Edition Image" />
+            </div>
+        </div>
+        <div class="yourscore_login_wrapper">
+            <div class="product_name_wrapper">
+                <span class="product_name">The Wizards: Enhanced Edition</span>
+            </div>
+            <div class="score_summary yourscore_login">
+                <div class="protector"></div>
+                <div class="yourscore_wrap">
+                    <div class="label label_game">Your Score</div>
+                    <div class="data yourscore">
+                        <span class="score_value">0</span>
+                        <span class="score_total">out of 10</span>
+                    </div>
+                    <div class="summary feedback">
+                    </div>
+
+                    
+                    <div class="rating_picker rating_picker_game">
+                        <input type="hidden" name="review_score" value="0"/>
+
+                        <div class="rating_picker_std">
+                            <div class="rating_label">Rate this:</div>
+                            <ul class="rating_actions rating_values rating_values_game ">
+                                <input type="hidden" name="csrf" value="e3f11e8991772729bc10e24c8493f16f" />
+                                                                    <li class="rating_value_item rating_value_100">
+                                        <div class="rating_action rating_action_game rating_action_100 "
+                                           rel="nofollow"
+                                           title="Rate 10 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=10&ref_type_id=30&ref_id=538456"
+                                           >
+                                            <span class="rating_value">10</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_90">
+                                        <div class="rating_action rating_action_game rating_action_90 "
+                                           rel="nofollow"
+                                           title="Rate 9 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=9&ref_type_id=30&ref_id=538456"
+                                           >
+                                            <span class="rating_value">9</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_80">
+                                        <div class="rating_action rating_action_game rating_action_80 "
+                                           rel="nofollow"
+                                           title="Rate 8 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=8&ref_type_id=30&ref_id=538456"
+                                           >
+                                            <span class="rating_value">8</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_70">
+                                        <div class="rating_action rating_action_game rating_action_70 "
+                                           rel="nofollow"
+                                           title="Rate 7 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=7&ref_type_id=30&ref_id=538456"
+                                           >
+                                            <span class="rating_value">7</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_60">
+                                        <div class="rating_action rating_action_game rating_action_60 "
+                                           rel="nofollow"
+                                           title="Rate 6 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=6&ref_type_id=30&ref_id=538456"
+                                           >
+                                            <span class="rating_value">6</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_50">
+                                        <div class="rating_action rating_action_game rating_action_50 "
+                                           rel="nofollow"
+                                           title="Rate 5 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=5&ref_type_id=30&ref_id=538456"
+                                           >
+                                            <span class="rating_value">5</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_40">
+                                        <div class="rating_action rating_action_game rating_action_40 "
+                                           rel="nofollow"
+                                           title="Rate 4 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=4&ref_type_id=30&ref_id=538456"
+                                           >
+                                            <span class="rating_value">4</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_30">
+                                        <div class="rating_action rating_action_game rating_action_30 "
+                                           rel="nofollow"
+                                           title="Rate 3 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=3&ref_type_id=30&ref_id=538456"
+                                           >
+                                            <span class="rating_value">3</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_20">
+                                        <div class="rating_action rating_action_game rating_action_20 "
+                                           rel="nofollow"
+                                           title="Rate 2 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=2&ref_type_id=30&ref_id=538456"
+                                           >
+                                            <span class="rating_value">2</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_10">
+                                        <div class="rating_action rating_action_game rating_action_10 "
+                                           rel="nofollow"
+                                           title="Rate 1 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=1&ref_type_id=30&ref_id=538456"
+                                           >
+                                            <span class="rating_value">1</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_0">
+                                        <div class="rating_action rating_action_game rating_action_0 "
+                                           rel="nofollow"
+                                           title="Rate 0 out of 10"
+                                           data-rateref="/jl/rate/set-rating?score=0&ref_type_id=30&ref_id=538456"
+                                           >
+                                            <span class="rating_value">0</span>
+                                        </div>
+                                    </li>
+                                                                    <li class="rating_value_item rating_value_delete">
+                                        <div class="rating_action rating_action_game rating_action_delete "
+                                           rel="nofollow"
+                                           title="Delete rating"
+                                           data-rateref="/jl/rate/set-rating?score=-1&ref_type_id=30&ref_id=538456"
+                                           >
+                                            <span class="rating_value">                                                0</span>
+                                        </div>
+                                    </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div>
+                <div class="score_details userscore_details">
+                    <div class="score_summary">
+    <div class="userscore_wrap feature_userscore">
+        <div class="label">User Score</div>
+                
+<div class="metascore_w user large game tbd">tbd</div>
+
+
+        
+        <div class="summary">
+            <p><span class="desc">No user score yet</span><span class="count"><span class="separator">- </span><span class="befirst_msg">Be the first to review!</span></span></p>
+        </div>
+    </div>
+</div>
+                </div>
+            </div>
+        </div>
+        <div class="clr"></div>
+    </div>
+
+    <div class="login_wrapper" data-fbenabled="1">
+    </div>
+    <div class="after_login">
+        <div class="after_message">Would you like to write a review?</div>
+        <div class="login_success">
+            <input class="BUTTON bigger" type="button" name="review" value="Write a Review" data-href="/game/playstation-4/the-wizards-enhanced-edition/user-reviews"/>
+            <input class="BUTTON bigger gray" type="button" name="close" value="Close"/>
+            <hr />
+                                                            
+                                                                                                <div>
+                    <div class="share_message">Share this?</div>
+                    
+
+<div class="inline_social product_social">
+    
+            <div class="inline_social_button">
+            <a href="https://twitter.com/share" class="twitter-share-button"
+                   data-count="horizontal"
+                   data-via="metacritic"
+                   data-url="https://www.metacritic.com/game/playstation-4/the-wizards-enhanced-edition"
+                   data-counturl="https://www.metacritic.com/game/playstation-4/the-wizards-enhanced-edition">
+                <img src="/images/buttons/twitter_inline.png" alt="Share this on Twitter"/>
+            </a>
+        </div>
+                <div class="inline_social_button facebook_sharing">
+        <noscript>
+            <a href="https://www.facebook.com/sharer/sharer.php?u=https://www.metacritic.com/game/playstation-4/the-wizards-enhanced-edition&t=The Wizards: Enhanced Edition for PlayStation 4 Reviews" rel="nofollow popup:external">
+                <img src="/images/buttons/facebook_inline.png" alt="Share this on Facebook" rel="nofollow" />
+            </a>
+        </noscript>
+        <fb:like href="https://www.metacritic.com/game/playstation-4/the-wizards-enhanced-edition" send="false" layout="button_count" width="100" show_faces="false" font=""></fb:like>
+        </div>
+    </div>
+
+                <div style="clear: both;"></div>
+                </div>
+                    </div>
+    </div>
+    <div style="clear:both;"></div>
+</div>
+
+                                                        </div>
+    
+            </div>
+                            <div class="section product_details">
+                    <div class="details main_details">
+    <ul class="summary_details">
+                    <li class="summary_detail product_summary">
+                <span class="label">Summary:</span>
+                <span class="data">
+                                                                        
+                                                                                                                                                        <span>Become a powerful sorcerer with a host of mighty spells at your fingertips and protect the realm of Meliora! The Wizards is an acclaimed action-adventure game with a unique gesture-based spellcasting system, designed for PS Move controllers.</span>
+                                    </span>
+            </li>
+            </ul>
+    
+    
+</div>
+<div class="details side_details">
+    <ul class="summary_details">
+                    <li class="summary_detail developer">
+                <span class="label">Developer:</span>
+                <span class="data">
+                    Carbon Studio                </span>
+            </li>
+                                            <li class="summary_detail product_genre"><span class="label">Genre(s): </span><span class="data" >Action</span>,                                            <span class="data" >Shooter</span>,                                            <span class="data" >Light Gun</span>                                    </li>
+                                                    <li class="summary_detail product_players">
+            <span class="label"># of players:</span>
+            <span class="data">No Online Multiplayer</span>
+        </li>
+                <li class="summary_detail product_cheats">
+            <span class="label">Cheats:</span>
+            <span class="data"><a rel="popup:external" href="https://gamefaqs.gamespot.com/console/ps4/code/258537.html">On GameFAQs</a></span>
+        </li>
+
+                    <li class="summary_detail product_rating">
+                <span class="label">Rating:</span>
+                <span class="data" >E10+</span>
+            </li>
+                                        <li class="summary_detail product_controllers">
+                <span class="label">Special Controllers:</span>
+                <span class="data">
+                                                                                                                                                            <a href="/browse/games/score/metascore/all/ps4/filtered?hardware=psvr">
+                                                        PlayStation VR Required
+                                                            </a>
+                                                                                                                    </span>
+            </li>
+                <li class="summary_detail more">
+            <a href="/game/playstation-4/the-wizards-enhanced-edition/details">More Details and Credits &raquo;</a>
+        </li>
+    </ul>
+</div>
+
+                </div>
+                    </div>
+    </div>
+</div>
+
+
+
+
+
+<div class="module critic_user_reviews">
+    <div class="critic_user_reviews_wrap">
+        
+        
+        <div class="module reviews_module critic_reviews_module">
+                    
+                                                    
+            <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title"><a href="/game/playstation-4/the-wizards-enhanced-edition/critic-reviews">Critic Reviews</a></h2></div></div>
+<div class="body">
+                                <div class="score_distribution">
+    <div class="distribution_wrap">
+        <div class="distribution_title">Score distribution:</div>
+        <ol class="score_counts hover_none">
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Positive:</span>
+                    <span class="data">
+                        <a href="/game/playstation-4/the-wizards-enhanced-edition/critic-reviews?dist=positive">                            <span class="total" style="width:80%;">
+                                <span class="count">8</span>
+                                <span class="distribution positive"> out of 18</span>
+                            </span>
+                        </a>                    </span>
+                </div>
+            </li>
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Mixed:</span>
+                    <span class="data">
+                        <a href="/game/playstation-4/the-wizards-enhanced-edition/critic-reviews?dist=neutral">                            <span class="total" style="width:100%;">
+                                <span class="count">10</span>
+                                <span class="distribution mixed"> out of 18</span>
+                            </span>
+                        </a>                    </span>
+                </div>
+            </li>
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Negative:</span>
+                    <span class="data">
+                                                    <span class="total zero_total" style="width:0%;">
+                                <span class="count">0</span>
+                                <span class="distribution negative"> out of 18</span>
+                            </span>
+                                            </span>
+                </div>
+            </li>
+                    </ol>
+		    </div>
+</div>
+
+                            <ol class="reviews critic_reviews">            <li class="review critic_review first_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="https://www.hobbyconsolas.com/reviews/analisis-wizards-ps4-playstation-vr-385652">Hobby Consolas</a></div><div class="date">Mar 12, 2019</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game positive indiv">84</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                The Wizards delivers one of the most solid experience we enjoyed in VR. It is immersive, comfortable and makes perfect use of motion controls to make us feel like summoning spells and confronting huge creatures.
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/hobby-consolas?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="https://www.hobbyconsolas.com/reviews/analisis-wizards-ps4-playstation-vr-385652">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="https://gameover.gr/game-reviews/39196-the-wizards-enhanced-edition-review">GameOver.gr</a></div><div class="date">Apr  5, 2019</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game positive indiv">80</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                The Enhanced version of The Wizards is an absolute joy to play. It has a great movement system with zero locomotion, the gesture-based battle is fabulous and the overall art direction and graphics are superb. We had some major issues when the game was losing track of the Move Controllers, but besides that, this is one of the best ways to feel like a true spellcaster.
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/gameovergr?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="https://gameover.gr/game-reviews/39196-the-wizards-enhanced-edition-review">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="https://www.thegamesmachine.it/the-wizards-enhanced-edition/the-wizards-enhanced-edition-recensione-ps4/">The Games Machine</a></div><div class="date">Mar 12, 2019</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game positive indiv">77</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                A light and entertaining alternative to heavy-weight shooters like Raw Data and In Death, The Wizards gives the player great satisfaction in creating spells with their own hands, and that's simply amazing.
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/the-games-machine?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="https://www.thegamesmachine.it/the-wizards-enhanced-edition/the-wizards-enhanced-edition-recensione-ps4/">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="http://www.playstationcountry.com/the-wizards-psvr-review/">PlayStation Country</a></div><div class="date">Mar 12, 2019</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game mixed indiv">70</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                The Wizards offers a slight change of pace from the wave based shooters PSVR is flooded with. You're still taking out waves of enemies as they run towards you but this time you're using gestures to conjure spells and it works very well. It's quite short and even then the constant battles do become repetitive but the spell upgrades do give a decent incentive to replay levels.
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/playstation-country?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="http://www.playstationcountry.com/the-wizards-psvr-review/">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="https://videochums.com/review/the-wizards-enhanced-edition">Video Chums</a></div><div class="date">Mar 12, 2019</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game mixed indiv">66</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                Casting gesture-based spells is a great concept for a VR game but ensuring that the gestures register properly can make The Wizards: Enhanced Edition an irritating experience. That being said, it can be quite fun if you're willing to adapt to its frustrating aspects.
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/video-chums?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="https://videochums.com/review/the-wizards-enhanced-edition">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="https://www.psu.com/reviews/the-wizards-enhanced-edition-review/">PlayStation Universe</a></div><div class="date">Mar 12, 2019</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game mixed indiv">65</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                Beautiful visuals and a cool gesture-based magic system can’t save The Wizards: Enhanced Edition from an inscrutable progression system and some dire technical issues. Fantasy fans will find some enjoyment from the puzzles and the fun narrator, but some strange design decisions end up kneecapping the experience. 
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/playstation-universe?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="https://www.psu.com/reviews/the-wizards-enhanced-edition-review/">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                                        <li class="review critic_review last_review">
+                <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
+                    <div class="review_content">
+                        <div class="review_section">
+                            <div class="review_stats">
+                                                                
+                                
+                                <div class="review_critic"><div class="source"><a rel="popup:external" class="external" href="https://www.criticalhit.net/review/wizards-enhanced-edition-review-a-spellcasting-snooze/">Critical Hit</a></div><div class="date">Mar 12, 2019</div></div>
+                                
+                                <div class="review_grade">
+                                    
+
+        
+<div class="metascore_w medium game mixed indiv">50</div>
+
+                                </div>
+                            </div>
+                            <div class="review_body">
+                                The Wizards: Enhanced Edition wrestles with the limitations of PSVR and never wins, deeply undercutting its enjoyable spellcasting with inaccurate motion tracking. These issues are only made worse by uninteresting missions and repetitive combat, making the initial splendour of this spellcasting adventure fade very quickly.
+                            </div>
+                        </div>
+                                                    <div class="review_section review_actions">
+                                                                                                            
+                                                                                                                                                                                <ul class="review_actions">
+                                        <li class="review_action author_reviews"><a href="/publication/critical-hit?filter=games">All this publication's reviews</a></li>
+                                        <li class="review_action full_review"><a rel="popup:external" class="external" href="https://www.criticalhit.net/review/wizards-enhanced-edition-review-a-spellcasting-snooze/">Read full review</a></li>
+                                    </ul>
+                                                            </div>
+                                            </div>
+                </div></div></div></div>
+            </li>
+                                        </ol>
+                        </div>
+
+    
+    
+                        <p class="see_all"><a href="/game/playstation-4/the-wizards-enhanced-edition/critic-reviews">See all 18 Critic Reviews</a></p>
+                    
+    </div>
+            <div class="module reviews_module user_reviews_module">
+    <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title"><a href="/game/playstation-4/the-wizards-enhanced-edition/user-reviews">User Reviews</a></h2></div></div>
+            <div class="write_review"><a class="write_review" href="/game/playstation-4/the-wizards-enhanced-edition/user-reviews"><span>Write a Review</span></a></div>
+        <div class="body">
+                                            <div class="score_distribution">
+    <div class="distribution_wrap">
+        <div class="distribution_title">Score distribution:</div>
+        <ol class="score_counts hover_none">
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Positive:</span>
+                    <span class="data">
+                                                    <span class="total zero_total" style="width:0%;">
+                                <span class="count">0</span>
+                                <span class="distribution positive"> out of </span>
+                            </span>
+                                            </span>
+                </div>
+            </li>
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Mixed:</span>
+                    <span class="data">
+                                                    <span class="total zero_total" style="width:0%;">
+                                <span class="count">0</span>
+                                <span class="distribution mixed"> out of </span>
+                            </span>
+                                            </span>
+                </div>
+            </li>
+                        <li class="score_count">
+                <div class="count_wrap">
+                    <span class="label">Negative:</span>
+                    <span class="data">
+                                                    <span class="total zero_total" style="width:0%;">
+                                <span class="count">0</span>
+                                <span class="distribution negative"> out of </span>
+                            </span>
+                                            </span>
+                </div>
+            </li>
+                    </ol>
+		    </div>
+</div>
+
+                                                </div>
+    </div>
+    </div>
+</div>
+
+
+
+<script type='text/javascript'>
+  
+  //override amzn vars
+  var pageGuid = window.utag_data ? window.utag_data._pageViewGuid : "";
+  window.amzn_assoc_subtag = pageGuid;
+  window.amzn_assoc_title = "Shop Related Deals";
+  window.amzn_assoc_rows = "1";
+  window.amzn_assoc_rating = "false";
+  window.amzn_assoc_design = "standard_grid";
+  
+</script>
+
+<link rel="stylesheet" href="/css/global/amazon.src.css" type="text/css"/>
+
+<div id="tv-game-music-amazon-shopping-unit">
+  <div id="amzn-assoc-ad-59f8e9e4-5bed-4576-aacb-15693482f182" class="subrow pad_top2"></div>
+
+  <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=59f8e9e4-5bed-4576-aacb-15693482f182"></script>
+</div>
+
+
+
+
+
+
+
+</div>
+
+
+                                                                </div>
+                            <div id="side" class="col side_col">
+                    
+                        
+                        <div id="mpu_plus_top" class="ad_unit">
+                            
+                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_mpu_plus_top = googletag.defineSlot("/8264/aw-metacritic/games",[[300,250],[300,600]], "mpu_plus_top").addService(googletag.pubads()).setTargeting("pos", "top");
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("mpu_plus_top");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+
+<div class="module list_rankings contain_module">
+    <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title">Awards & Rankings</h2></div></div>
+    <div class="body">
+        <table class="rankings">
+                            
+                                    
+                                                                                                    
+                
+                                                                        
+                
+                                    
+                                            
+                                                    
+                <tr>
+                    <td class="ranking_icon">
+                                                    <a href="/browse/games/score/metascore/year/ps4/filtered?sort=desc&year_selected=2019">
+                                                <i class="fa fa-trophy"></i>
+                        <div class="shield">46</div>
+                                                    </a>
+                                            </td>
+                    <td class="ranking_wrap">
+                        <div class="ranking_title">
+                            
+                                                                                        <a href="/browse/games/score/metascore/year/ps4/filtered?sort=desc&year_selected=2019">#46 Best PS4 Game of 2019</a>
+                                                        
+                            
+                                                    </div>
+                    </td>
+                </tr>
+                         
+                                    
+                                                                                                    
+                
+                                                                        
+                
+                                    
+                                            
+                                                    
+                <tr>
+                    <td class="ranking_icon">
+                                                    <a href="/browse/games/score/metascore/shared/ps4/filtered?sort=desc&year_selected=2019">
+                                                <i class="fa fa-trophy"></i>
+                        <div class="shield">14</div>
+                                                    </a>
+                                            </td>
+                    <td class="ranking_wrap">
+                        <div class="ranking_title">
+                            
+                                                                                        <a href="/browse/games/score/metascore/shared/ps4/filtered?sort=desc&year_selected=2019">#14 Most Shared PS4 Game of 2019</a>
+                                                        
+                            
+                                                    </div>
+                    </td>
+                </tr>
+                 </table>
+    </div>
+</div>
+
+
+    <div class="module supplements_module" id="supplementary-nav">
+    <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title">Essential Links</h2></div></div>
+    <div class="body">
+        <div class="body_wrap">
+                        <div id="supplementary-items" class="supplements supplement_links">
+                <ol class="supplements supplement_links">
+                                                                                                    <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;1'}" href="https://www.metacritic.com/browse/games/release-date/new-releases/ps4/date">New PS4 Releases by Date</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;2'}" href="https://www.metacritic.com/browse/games/release-date/new-releases/ps4/name">New PS4 Releases by Title</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;3'}" href="https://www.metacritic.com/browse/games/release-date/new-releases/ps4/metascore">Best Recent Releases for PS4</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;4'}" href="https://www.metacritic.com/browse/games/release-date/coming-soon/ps4/date">Upcoming PS4 Release Calendar</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;5'}" href="https://www.metacritic.com/browse/games/score/metascore/year/ps4?year_selected=2019&sort=desc">2019 High Scores - PS4</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;6'}" href="https://www.metacritic.com/browse/games/score/metascore/all/ps4?sort=desc">All-Time High Scores - PS4</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;7'}" href="https://www.metacritic.com/browse/games/title/ps4">All PS4 Games: A-Z Index</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="section dw_tag {'tag':'supplementary-nav;item;8'}" href="https://www.metacritic.com/feature/best-videogames-released-in-2018">Best Games of 2018</a>
+                            </li>
+                                                            </ol>
+            </div>
+                                    <div id="supplementary-articles" class="supplements supplement_articles">
+                <ol class="supplements supplement_articles">
+                                                                                                    <li class="supplement supplement_link">
+                                <a class="dw_tag {'tag':'supplementary-nav;article;1'}" href="https://www.metacritic.com/pictures/2019-video-game-preview-ps4-xb1-switch-pc">2019 Videogame Preview</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="dw_tag {'tag':'supplementary-nav;article;2'}" href="https://www.metacritic.com/feature/major-upcoming-video-game-release-dates-xbox-ps4-pc-switch">Release Dates for Notable Upcoming Games</a>
+                            </li>
+                                                                                                                            <li class="supplement supplement_link">
+                                <a class="dw_tag {'tag':'supplementary-nav;article;3'}" href="https://www.metacritic.com/feature/new-free-games-playstation-xbox-pc-switch">This Month's Free PS4 Games</a>
+                            </li>
+                                                            </ol>
+                <div class="more_supplements more_articles">
+                    
+                    <a class="dw_tag {'tag':'supplementary-nav;more-articles'}" href="/feature">More articles &raquo;</a>
+                </div>
+            </div>
+                    </div>
+    </div>
+</div>
+
+
+
+
+                        
+                        <div id="recirculation_ad" class="ad_unit pad_btm1 pad_top1">
+                            
+                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_recirculation_ad = googletag.defineSlot("/8264/aw-metacritic/games",[300,249], "recirculation_ad").addService(googletag.pubads()).setTargeting("pos", "recirculation");
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("recirculation_ad");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+
+
+
+    
+    
+    
+        <div class="module products_module list_product_titles_widget_module  contain_module">
+        <div class="head head_type_1"><div class="head_wrap"><h2 class="module_title"><a href="/browse/games/release-date/new-releases/ps4/date">Current PS4 Games</a></h2><div class="more"><span class="more_item"><a href="/browse/games/release-date/new-releases/ps4/date">Full List &raquo;</a></span></div></div></div>
+                  
+        <div class="body">
+                                                                                <div class="tabs ">
+        <div class="tab_wrap">
+                            <ul class="tabs tabs_type_1">            <li class="tab tab_type_1 tab_metascore first">
+                                    <span class="active"><span>By Metascore</span></span>
+                            </li>
+                                                        <li class="tab tab_type_1 tab_userscore last">
+                                                        <a  href="/game/playstation-4/the-wizards-enhanced-edition?recent-sort=userscore"><span>By user score</span></a>
+                            </li>
+            </ul>            
+    
+    
+            </div>
+    </div>
+    
+    
+
+                        <div class="body_wrap">
+                
+                <div class="product_titles">
+    <table class="score_title_table">
+                                                
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/red-dead-redemption-2">
+<span class="metascore_w small game positive">97</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/red-dead-redemption-2">
+                    Red Dead Redemption 2
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/resident-evil-2">
+<span class="metascore_w small game positive">90</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/resident-evil-2">
+                    Resident Evil 2
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/monster-boy-and-the-cursed-kingdom">
+<span class="metascore_w small game positive">87</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/monster-boy-and-the-cursed-kingdom">
+                    Monster Boy and the Cursed Kingdom
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/soulcalibur-vi">
+<span class="metascore_w small game positive">84</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/soulcalibur-vi">
+                    SoulCalibur VI
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/kingdom-hearts-iii">
+<span class="metascore_w small game positive">83</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/kingdom-hearts-iii">
+                    Kingdom Hearts III
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/tom-clancys-the-division-2">
+<span class="metascore_w small game positive">82</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/tom-clancys-the-division-2">
+                    Tom Clancy's The Division 2
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/spyro-reignited-trilogy">
+<span class="metascore_w small game positive">82</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/spyro-reignited-trilogy">
+                    Spyro Reignited Trilogy
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/hitman-2">
+<span class="metascore_w small game positive">82</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/hitman-2">
+                    Hitman 2
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/warhammer-vermintide-2">
+<span class="metascore_w small game positive">81</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/warhammer-vermintide-2">
+                    Warhammer: Vermintide 2
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/ace-combat-7-skies-unknown">
+<span class="metascore_w small game positive">80</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/ace-combat-7-skies-unknown">
+                    Ace Combat 7: Skies Unknown
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/metro-exodus">
+<span class="metascore_w small game positive">80</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/metro-exodus">
+                    Metro Exodus
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/the-forest">
+<span class="metascore_w small game positive">78</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/the-forest">
+                    The Forest
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/fateextella-link">
+<span class="metascore_w small game positive">75</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/fateextella-link">
+                    Fate/Extella Link
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/battlefield-v">
+<span class="metascore_w small game mixed">73</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/battlefield-v">
+                    Battlefield V
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/ride-3">
+<span class="metascore_w small game mixed">72</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/ride-3">
+                    RIDE 3
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/just-cause-4">
+<span class="metascore_w small game mixed">65</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/just-cause-4">
+                    Just Cause 4
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/senran-kagura-burst-renewal">
+<span class="metascore_w small game mixed">65</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/senran-kagura-burst-renewal">
+                    Senran Kagura Burst Re:Newal
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/genesis-alpha-one">
+<span class="metascore_w small game mixed">64</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/genesis-alpha-one">
+                    Genesis Alpha One
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/anthem">
+<span class="metascore_w small game mixed">55</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/anthem">
+                    Anthem
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/fallout-76">
+<span class="metascore_w small game mixed">53</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/fallout-76">
+                    Fallout 76
+                    </a>
+        
+            </td>
+</tr>
+
+            </table>
+
+
+    </div>
+
+
+            </div>
+        </div>
+
+        		            <div class="foot">
+        <div class="foot_wrap">
+                    
+            <div class="more">
+                <span class="more_item"><a href="/browse/games/release-date/new-releases/ps4/date">All Current Games &raquo;</a></span>
+            </div>
+                </div>
+    </div>
+
+
+    </div>
+
+
+
+
+                        
+                        <div id="mpu_bottom" class="ad_unit">
+                            
+                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_mpu_bottom = googletag.defineSlot("/8264/aw-metacritic/games",[300,250], "mpu_bottom").addService(googletag.pubads()).setTargeting("pos", "bottom");
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("mpu_bottom");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+                </div>
+                    </div>
+    </div>
+        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+                    
+                        
+                        <div id="leader_bottom" class="ad_unit">
+                            
+                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_leader_bottom = googletag.defineSlot("/8264/aw-metacritic/games",[[728,90],[970,66],[728,92],[970,250],[7,7]], "leader_bottom").addService(googletag.pubads()).setTargeting("pos", "bottom");
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("leader_bottom");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+            </div>
+                        </div>
+            
+                        
+                        
+                        <div id="intromercial" class="ad_unit">
+                            
+                            <script type="text/javascript">
+                                            
+                        googletag.cmd.push(function() {
+                        
+                                                            window.metac_g_ad_intromercial = googletag.defineOutOfPageSlot("/8264/aw-metacritic/games",
+                                    "intromercial").addService(googletag.pubads());
+                                                        
+                        
+                        });
+                        
+                                                    window.metac_ads_pushdisplay.push("intromercial");
+                                                            </script>
+                                        </div>
+                        
+
+
+
+            
+    
+    <div id="mastfoot">
+        <footer id="bottom_footer">
+    <div id="providers">
+	<a href="https://www.allmusic.com" target="_blank">Music title data, credits, and images provided by <span>AMG</span></a>
+	<span class="link_divider">|</span><a href="https://www.imdb.com" target="_blank">Movie title data, credits, and poster art provided by <span>IMDb</span></a>
+	<span class="link_divider">|</span><a href="https://www.internetvideoarchive.com" target="_blank">Video and Images provided by <span>IVA</span></a>
+    <div id="trademark">
+        We Deal With Criticism<sup>&reg;</sup>&nbsp;
+	</div>
+</div>
+
+
+            <div class="site_links upper">
+                    <a href="https://www.metacritic.com/movie">
+                <span>
+                                            Movies
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/tv">
+                <span>
+                                            TV
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/music">
+                <span>
+                                            Music
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/playstation-4">
+                <span>
+                                            PS4
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/xbox-one">
+                <span>
+                                            XboxOne
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/switch">
+                <span>
+                                            Switch
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/pc">
+                <span>
+                                            PC
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/wii-u">
+                <span>
+                                            WiiU
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/3ds">
+                <span>
+                                            3DS
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/playstation-vita">
+                <span>
+                                            PS Vita
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/game/ios">
+                <span>
+                                            iOS
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/feature">
+                <span>
+                                            Reports
+                                    </span>
+            </a>
+                    <a href="https://www.metacritic.com/rss">
+                <span>
+                                            RSS Feeds
+                                    </span>
+            </a>
+                </div>
+    
+    <div class="pad_top1 pad_btm1">
+        <div class="social_round">
+            <a href="https://www.facebook.com/Metacritic" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
+            <a href="https://twitter.com/metacritic" target="_blank" rel="noopener"><i class="fa fa-twitter"></i></a>
+        </div>
+    </div>
+
+    <div class="about_cbs">
+        <div id="footer_about_links">
+            <a class="first" href="https://www.cbsinteractive.com" target="_blank">About CBS Interactive</a>
+            <span class="link_divider">|</span><a href="https://www.cbsinteractive.com/careers/" target="_blank">Jobs</a>
+            <span class="link_divider">|</span><a href="https://www.cbsinteractive.com/advertise/" target="_blank">Advertise</a>
+            <span class="link_divider">|</span><a href="https://www.metacritic.com/faq">FAQ</a>
+            <span class="link_divider">|</span><a href="https://www.metacritic.com/about-metacritic">About Metacritic</a>
+            <span class="link_divider">|</span><a href="https://www.metacritic.com/contact-us">Contact</a>
+            <span class="link_divider">|</span><span id="footer_privacy"><a href="https://legalterms.cbsinteractive.com/privacy" target="_blank">Privacy Policy</a></span>
+            <span class="link_divider">|</span><span id="footer_terms"><a href="https://cbsi.secure.force.com/CBSi/articles/FAQ/CBSi-Terms-of-Use?template=template_tougl&referer=tougl.com&data=&cfs=default" target="_blank">Terms of Use</a></span>
+                            <span class="link_divider">|</span><span id="footer_attribution"><a href="https://www.gamespot.com/" target="_blank">Gamespot</a></span>
+                    </div>
+        <div id="footer_rights" class="pad_btm2">
+            &copy; 2019 CBS Interactive Inc. All rights reserved.
+        </div>
+    </div>
+</footer>
+
+    </div>
+
+    
+    <div id="amzn-assoc-ad-23cf2fa7-c9fd-4908-97de-fbc48a779984"></div>
+    <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=23cf2fa7-c9fd-4908-97de-fbc48a779984"></script>
+
+</div>
+
+<div id="site_scripts" class="dw_tracking">
+     
+<script type="text/javascript" src="/js/omniture/uuid.js"></script>
+<script type="text/javascript">
+    
+    if (self != top) {
+        top.location = self.location;
+    }
+    var MC_UUID = uuid.v1();
+</script>
+
+                                                                                                
+
+ 
+<script language="JavaScript" type="text/javascript">
+    
+    var utag_data = {
+        isDev:0,
+            
+                siteType:"desktop web",
+                deviceType:"desktop",
+                siteSection:"games",
+                pageType:"product_overview",
+                pageFindingMethod:"External",
+                session: MetaC.adSession() + ':' + MetaC.adSubses(),
+                gameGenre:"Action|Shooter|Light Gun",userId:null,userState:"not authenticated",userType:"anon",gameId:"mc-game-538456",gameTitle:"The Wizards: Enhanced Edition",gamePlatform:"PlayStation 4",bkPath:"/8264/aw-metacritic/games",_test:"",pageViewGuid:MC_UUID
+    };
+    
+                        
+            
+            window.om_lead_media = {
+                mediaType: "Game",
+                mediaId: "mc-game-538456",
+                mediaTitle: "The Wizards: Enhanced Edition"
+            };
+            
+            
+    
+    
+    if ( window.eventAmazonBuyView ) {
+        utag_data.eventAmazonBuyView = 1;
+    }
+    if ( window.eventAmazonPivView ) {
+        utag_data.eventAmazonPivView = 1;
+    }
+    
+    
+    
+    if ( MetaC._utagAutoPlay != -1 ) {
+        utag_data.videoAutoPlay = MetaC._utagAutoPlay ? 'on' : 'off';
+    }
+    
+
+    
+</script>
+
+
+
+
+<script type="text/javascript">
+    
+    
+    var __pv = MetaC.handleGooglePageView();
+    googletag.cmd.push(function() {
+        
+        googletag.pubads().setTargeting("ptype", "product_overview");
+                    googletag.pubads().setTargeting("gameId", "game-538456");
+                    googletag.pubads().setTargeting("game", "the-wizards-enhanced-edition");
+                    googletag.pubads().setTargeting("con", "playstation-4");
+                            googletag.pubads().setTargeting("test", "mcold");
+                
+        googletag.pubads().setTargeting("vguid", MC_UUID);
+        googletag.pubads().setTargeting("session", MetaC.adSession());
+        googletag.pubads().setTargeting("subses", MetaC.adSubses());
+        googletag.pubads().setTargeting("env", "prod");
+                        var parts = window.location.hash.split("=");
+        if ( parts.length > 1 && parts[0] == '#ftag' ) {
+            googletag.pubads().setTargeting("ftag",parts[1]);
+        }
+        
+                
+        
+        if ( window.I11C) {
+            if (window.I11C.Morph && window.I11C.Morph === 1) {
+                utag_data.adBlockRecovery = "unblocked";
+                utag_data.adsAreBlocked = "true";
+
+                var geo = MetaC.Cookie.get('il_geo');
+                if ( geo ) {
+                    geo = MetaC.Cookie.ilParse(geo);
+                    if ( geo && geo.postal_code && geo.country_code ) {
+                        googletag.pubads().setLocation(geo.postal_code + ',' + geo.country_code)
+                    }
+                }
+            } else {
+                utag_data.adBlockRecovery = 'instart_noop';
+                utag_data.adsAreBlocked = "false";
+            }
+        } else {
+            utag_data.adBlockRecovery = 'no_instart';
+            utag_data.adsAreBlocked = "false";
+        }
+
+        googletag.pubads().setTargeting("pv", __pv+""); // must be a string
+
+        googletag.pubads().enableSingleRequest();
+        googletag.pubads().collapseEmptyDivs();
+        if (window.metac_ads_push_progressive_display && window.metac_ads_push_progressive_display.length)
+            googletag.pubads().disableInitialLoad();
+        googletag.enableServices();
+    });
+    
+    
+
+    
+    
+    if ( MetaC && MetaC.Video ) {
+        
+                    MetaC.Video.setIMATargeting("gameId", "game-538456");
+                    MetaC.Video.setIMATargeting("game", "the-wizards-enhanced-edition");
+                    MetaC.Video.setIMATargeting("con", "playstation-4");
+                    
+    }
+    
+</script>
+
+
+
+
+
+    <script type="text/javascript" src="https://urs.metacritic.com/sdk/urs.js"></script>
+
+
+    <script type="text/javascript">
+        if ( window.MetaC && MetaC.URS ) {
+            MetaC.URS.config(227, false);
+        }
+    </script>
+
+
+
+
+
+<script type="text/javascript">
+    (function(a,b,c,d){
+    a='//tags.tiqcdn.com/utag/cbsi/metacriticsite/prod/utag.js';
+    b=document;c='script';d=b.createElement(c);d.src=a;d.type='text/java'+c;d.async=true;
+    a=b.getElementsByTagName(c)[0];a.parentNode.insertBefore(d,a);
+    })();
+</script>
+
+
+
+
+    <script type="text/javascript">
+        $(document).ready(function(){
+            setTimeout(function(){
+                MetaC.checkOmniEvents();
+            }, 300);
+        });
+    </script>
+
+
+
+
+
+
+<script type="text/javascript">
+    
+    dwVars = {"siteId":"50","onId":"35319","ptId":"6346","ctype":"entitytype;entityid","cval":"game;538456"};
+    if (typeof DW == "object"){
+        DW.pageParams = dwVars;
+        DW.regSilo = '12';
+        DW.clear();
+    }
+</script>
+
+
+
+
+<script>
+    var cbsiApexGlobal = {
+        'SITE': dwVars.siteId,
+        'NODE': dwVars.onId,
+        'PTYPE':dwVars.ptId
+    };
+</script>
+
+
+
+
+
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-22577913-5']);
+    _gaq.push(['_setCustomVar',1,'PageType',dwVars.ptId,3]);
+    _gaq.push(['_trackPageview']);
+    _gaq.push(['_trackPageLoadTime']);
+    _gaq.push(['_setAllowLinker', true]);
+    _gaq.push(['nT._setAccount', 'UA-27653683-1']);
+    _gaq.push(['nT._setAllowLinker', true]);
+    _gaq.push(['nT._setSampleRate', '1']);
+    _gaq.push(['nT._trackPageview']);
+</script>
+
+
+
+<div id="fb-root"></div>
+<script>
+    window.fbAsyncInit = function() {
+        FB.init({
+            appId      : '123113677890173',
+            version    : 'v2.6',
+            channelUrl : 'https://www.metacritic.com/static/fbchannel.html',
+            status     : true,
+            xfbml      : true,
+            cookie     : true
+            });
+         MetaC.FB.initialized();
+        };
+    
+    (function(d, s, id){
+        var js, fjs = d.getElementsByTagName(s)[0];
+        if (d.getElementById(id)) {return;}
+        js = d.createElement(s); js.id = id;
+        js.src = "//connect.facebook.net/en_US/sdk.js";
+        fjs.parentNode.insertBefore(js, fjs);
+    }(document, 'script', 'facebook-jssdk'));
+    
+</script>
+
+
+
+<script>
+    window.twttr = (function (d,s,id) {
+      var t, js, fjs = d.getElementsByTagName(s)[0];
+      if (d.getElementById(id)) return; js=d.createElement(s); js.id=id;
+      js.src="https://platform.twitter.com/widgets.js"; fjs.parentNode.insertBefore(js, fjs);
+      return window.twttr || (t = { _e: [], ready: function(f){ t._e.push(f) } });
+    }(document, "script", "twitter-wjs"));
+
+    twttr.ready(function (twttr) {
+        MetaC.Twitter.initialized();
+    });
+</script>
+
+
+
+
+
+<script>
+    /* display the google ads now that the html is finished processing */
+    googletag.cmd.push(function() {
+        MetaC.displayAds();
+        if (window.metac_ads_push_progressive_display && window.metac_ads_push_progressive_display.length)
+            MetaC._refreshWithLightSpeed(window.metac_ads_pushdisplay);
+    });
+</script>
+
+
+
+
+<script>
+    
+    
+    if ( window._taboola && window.mcwait_taboola == null ) {
+        _taboola.push({flush: true});
+    }
+    
+</script>
+
+
+    <div id="amzn-assoc-ad-23cf2fa7-c9fd-4908-97de-fbc48a779984"></div>
+    <script async src="//z-na.amazon-adsystem.com/widgets/onejs?MarketPlace=US&adInstanceId=23cf2fa7-c9fd-4908-97de-fbc48a779984"></script>
+
+
+
+
+
+    
+    
+    <script>
+    	if (typeof cbsiLoadOffer == "function"){
+                cbsiLoadOffer(cbsiApexGlobal,1000);
+        }
+    </script>
+    
+</div>
+
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"860f7644b8","applicationID":"2033002","transactionName":"MgQEZ0dYCxEAVRBbDQtOJUZGTQoPTnEFXwc1EwlXQFoRWFtfClYHHQ==","queueTime":0,"applicationTime":711,"atts":"HkMTEQ9CGE5DV0YIGRgc","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+</html>
+
