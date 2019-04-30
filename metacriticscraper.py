@@ -2,8 +2,6 @@ from bs4 import BeautifulSoup
 import urllib
 from urllib.request import urlopen
 import csv
-import numpy as np
-import pandas as pd
 from decimal import *
 import datetime
 import scraperHelpers as sh
@@ -18,6 +16,20 @@ class metacritic_gamedata:
     metacriticurl=""
     num_userreviews = "UNASSIGNED"
     num_criticalreviews = "UNASSIGNED"
+    
+    def removeNonAscii(self):
+        self.name = sh.cleanAscii(self.name)
+        self.releasedate = sh.cleanAscii(self.releasedate)
+        self.metascore = sh.cleanAscii(self.metascore)
+        self.userscore = sh.cleanAscii(self.userscore)
+        self.vrrequired = sh.cleanAscii(self.vrrequired)
+        
+    def encodeStrings(self):
+        self.name = self.name.encode('utf-8')
+        self.releasedate = self.releasedate.encode('utf-8')
+        self.metascore = self.metascore.encode('utf-8')
+        self.userscore = self.userscore.encode('utf-8')
+        self.vrrequired = self.vrrequired.encode('utf-8')
     
     def crunchNumbers(self):
         if self.metascore != "tbd" and self.userscore != "tbd":
@@ -51,6 +63,7 @@ def scrape(platform,maxpages,outputto_csv,now,test_mode):
     localDir = "metacritic_main_html/"
 
     if test_mode is False: #get data via a url request
+        print("Starting live request for MetaCritic gallery pages")
         for i in range(cpage,maxpages):
             URL = "https://www.metacritic.com/browse/games/score/metascore/all/ps4/filtered?hardware=psvr&page="+str(cpage)
             localFilename = str(cpage) + ".html"
@@ -61,6 +74,7 @@ def scrape(platform,maxpages,outputto_csv,now,test_mode):
                
             cpage+=1
     else:
+        print("Starting LOCAL request for MetaCritic gallery pages")
         metacritic_mainpagedata = sh.getLocalHTMLCache(localDir)
     
         
@@ -96,31 +110,35 @@ def scrape(platform,maxpages,outputto_csv,now,test_mode):
         #Query each product page for the NUMBER of reviews
             if test_mode is False:
                 sh.randomsleep()
-                URL = murl
+            URL = murl
      
+            localFilename = str(title) + ".html"
+            localDir = "metacritic_individualgames_html/"
+            localFileLoc = localDir + localFilename
+            
+            if test_mode is False:
                 print("Making request for: " + str(murl))
-                localFilename = str(title) + ".html"
-                localDir = "metacritic_individualgames_html/"
-                
                 prodpage = sh.makeURLRequest(URL, True,localDir,localFilename,5,0)
+            else:
+                print("Making local request for: " + localFileLoc)
+                prodpage = sh.getLocalHTMLFile(localFileLoc)
                 
-                p_soup = BeautifulSoup(prodpage,'html.parser')
-                num_reviews = p_soup.find_all('div', class_='summary')
+            p_soup = BeautifulSoup(prodpage,'html.parser')
+            num_reviews = p_soup.find_all('div', class_='summary')
                 
-                try:
-                    num_userreviews = num_reviews[1].find('a').text
-                    if num_userreviews.endswith(' Ratings'):
-                        num_userreviews = num_userreviews[:-8] #Should remove the word ratings.
-                    num_userreviews = sh.removeExcessCharacters(num_userreviews)
-                except:
-                    num_userreviews = -1
-                    print("FAILED ON FINDING NUM USER REVIEWS")
+            try:
+                num_userreviews = num_reviews[1].find('a').text
+                if num_userreviews.endswith(' Ratings'):
+                    num_userreviews = num_userreviews[:-8] #Should remove the word ratings.
+                num_userreviews = sh.removeExcessCharacters(num_userreviews)
+            except:
+                num_userreviews = -1
+                print("FAILED ON FINDING NUM USER REVIEWS")
                     
-                num_criticalreviews = num_reviews[0].find('a').find('span').text #Critics reviews are store din a different heirarchy than users!
-                num_criticalreviews = sh.removeExcessCharacters(num_criticalreviews)
-            else: #testmode is not false.... COuld run another local request here, but for local testing purposes its a pass
-                num_userreviews = "TESTMODE"
-                num_criticalreviews = "TESTMODE"
+            num_criticalreviews = num_reviews[0].find('a').find('span').text #Critics reviews are store din a different heirarchy than users!
+            num_criticalreviews = sh.removeExcessCharacters(num_criticalreviews)
+            
+            
 #Stuff the results into a custom data object and feed it into an array            
             tgame = metacritic_gamedata()
             tgame.name = title
@@ -132,9 +150,12 @@ def scrape(platform,maxpages,outputto_csv,now,test_mode):
             tgame.num_userreviews = num_userreviews
             tgame.num_criticalreviews = num_criticalreviews
             tgame.crunchNumbers()
-            tgame.displayData()
+ #           tgame.displayData()
             metacritic_vrgames.append(tgame)
-    
+            
+    for g in metacritic_vrgames:
+        g.removeNonAscii()
+        #g.encodeStrings()
 ##Plop it out the Metacritic_gamedata data into a csv
     dt = now.strftime("%Y-%m-%d")
     filename = dt + "_Metacritic_PSVR"
@@ -147,4 +168,6 @@ def scrape(platform,maxpages,outputto_csv,now,test_mode):
             g_writer.writerow([g.name,g.releasedate, g.metascore,g.userscore,g.metauserdelta,g.vrrequired])
         
     print("METACRITIC SCRAPE COMPLETE; CSV LOCATED AT" + filename)
+    
+    return metacritic_vrgames
         

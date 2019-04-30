@@ -6,7 +6,6 @@ from decimal import *
 import datetime
 import scraperHelpers as sh
 
-
 class psn_gamedata:
     name = ""
     releasedate = ""
@@ -116,7 +115,7 @@ def scrape(platform,maxpages,outputto_csv,now,test_mode):
         tp = psn_gamedata()
 
         tp.name = psn_gamepage.find('h2', class_='pdp__title').text
-        sh.removeExcessCharacters(tp.name)
+        tp.name = sh.removeExcessCharacters(tp.name)
         print("Scraping " + tp.name + ", " + str(c) + " of " + str(len(psn_gamepagedata)))
 
         
@@ -181,4 +180,5 @@ def scrape(platform,maxpages,outputto_csv,now,test_mode):
     
         
     print("PSN SCRAPE COMPLETE; CSV LOCATED AT" + filename)
+    return allpsndata
 ##

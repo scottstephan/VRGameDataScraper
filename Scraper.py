@@ -7,6 +7,7 @@ import datetime
 import metacriticscraper as metacritic_scraper
 import psnscraper as psn_scraper
 import scraperHelpers as sh
+import combinedata as combiner
 
 #######STUFF TO DEFINE ###############
 now = datetime.datetime.now()
@@ -19,8 +20,12 @@ psn_maxpage = 15 #if you go over the page limit then psn returns just the last a
 
 ###################################### CALL THE SCRAPERS ##################################
 sh.overrideSleeptime(1,5)
-metacritic_scraper.scrape("psvr",metacritic_maxpage,True,now,runintestmode)
-psn_scraper.scrape("psvr",psn_maxpage,True,now,runintestmode)
+metacritic_data = metacritic_scraper.scrape("psvr",metacritic_maxpage,True,now,runintestmode)
+psn_data = psn_scraper.scrape("psvr",psn_maxpage,True,now,runintestmode)
 ###################################### END SCRAPE ##################################
+
+###Combine the data###
+combiner.combinedata(metacritic_data,psn_data,now)
+###End combine###
 
 print("all done");

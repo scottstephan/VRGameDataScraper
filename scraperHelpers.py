@@ -18,6 +18,7 @@ def removeExcessCharacters(data):
     #print("AFTER replace:" + str(data))
     data = data.rstrip(' ')
     #print("AFTER rstrip:" + str(data))
+    data = data.rstrip('\n')
     return data
 
 def cleanAscii(s):
@@ -93,3 +94,10 @@ def getLocalHTMLCache(file_dir):
         htmlfiles.append(html)
      
     return htmlfiles
+
+def getLocalHTMLFile(file_loc):
+    
+        htmlfile = open(file_loc,'r+', encoding="utf-8") 
+        html = htmlfile.read()
+        
+        return html
