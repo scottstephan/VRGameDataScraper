@@ -53,12 +53,19 @@ def removeTrailingPhrase(data,phrase):
 
 
 def makeURLRequest(URL, savelocal,local_dir,local_filename,timeoutmax,countAttempts):
-
-        user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7'
-        headers={'User-Agent':user_agent,} 
-        request = urllib.request.Request(URL,None,headers)
-        response = urllib.request.urlopen(request)
-        page_data = response.read()
+        try:
+            user_agent = 'Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; rv:1.9.0.7) Gecko/2009021910 Firefox/3.0.7'
+            headers={'User-Agent':user_agent,} 
+            request = urllib.request.Request(URL,None,headers)
+            response = urllib.request.urlopen(request)
+            page_data = response.read()
+        except urllib.error.HTTPError as err:
+            if err.code == 403:
+               print("403 TIMEOUT. WAITING AND RETRYING")
+               randomsleep()
+               makeURLRequest(URL, savelocal,local_dir,local_filename,timeoutmax,countAttempts)
+            else:
+                print("ERROR: " + str(err))
         
 #Check to see if the save directory exists and if it doesn't, create it
         if os.path.isdir(local_dir) is False:

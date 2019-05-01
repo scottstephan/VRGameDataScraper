@@ -40,8 +40,8 @@
     
     <link rel="stylesheet" href="/css/fonts/proxima-nova/stylesheet.css" type="text/css" charset="utf-8" />
     
-    <link rel="stylesheet" href="/css/global.min.1555004917.css" type="text/css">
-<link rel="stylesheet" href="/css/filters/base.min.1555004826.css" type="text/css">
+    <link rel="stylesheet" href="/css/global.min.1556566715.css" type="text/css">
+<link rel="stylesheet" href="/css/filters/base.min.1556566629.css" type="text/css">
 
 
     
@@ -53,7 +53,7 @@
         <link rel="canonical" href="https://www.metacritic.com/browse/games/score/metascore/all/ps4/filtered?page=1" />
         
     
-    
+
     
         		
 					<link rel="prev" href="/browse/games/score/metascore/all/ps4/filtered?hardware=psvr&page=0"/>
@@ -76,8 +76,10 @@
             // Google Analytics
             append('ga-lib', (('https:' == document.location.protocol)?'https://ssl':'http://www') + '.google-analytics.com/ga.js', true);
             // Omniture
-            window.gdprConsent = true;
-            if (typeof om == 'object' && typeof om.fireGdprTags != 'undefined') { om.fireGdprTags(); }
+            if (window.gdprConsent !== true) {
+                window.gdprConsent = true;
+                if (typeof om == 'object' && typeof om.fireGdprTags != 'undefined') { om.fireGdprTags(); }
+            }
             // Taboola
                         load_vendor_taboola();
                     }
@@ -89,7 +91,7 @@
     
     
     
-    <script type="text/javascript" src="/js/global.min.1555004917.js"></script>
+    <script type="text/javascript" src="/js/global.min.1556566715.js"></script>
 
 
     <script type="text/javascript">
@@ -204,11 +206,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/hulu-best-new-movies-and-shows">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/hulu201905-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/hulu201905-180.jpg" alt="What to Watch Now on Hulu Image" />
+                                        <a href="/feature/may-2019-movie-preview">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/moviepreview2019_05_johnwick-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/moviepreview2019_05_johnwick-180.jpg" alt="10 Films to See in May Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/hulu-best-new-movies-and-shows">What to Watch Now on Hulu</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/may-2019-movie-preview">10 Films to See in May</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/movie">More Reports</a>
@@ -240,11 +242,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/major-upcoming-video-game-release-dates-xbox-ps4-pc-switch">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/gamescorecard_2019_spring2-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/gamescorecard_2019_spring2-180.jpg" alt="Notable Video Game Releases: New and Upcoming Image" />
+                                        <a href="/feature/best-of-april-2019">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/bestof_2019_04-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/bestof_2019_04-180.jpg" alt="Best of April 2019: Top Albums, Games, Movies & TV Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/major-upcoming-video-game-release-dates-xbox-ps4-pc-switch">Notable Video Game Releases: New and Upcoming</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/best-of-april-2019">Best of April 2019: Top Albums, Games, Movies & TV</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/game">More Reports</a>
@@ -275,11 +277,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/now-streaming-on-amazon-instant-video">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/amazon201905-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/amazon201905-180.jpg" alt="What to Watch Now on Prime Video Image" />
+                                        <a href="/feature/may-2019-tv-preview">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/tvpreview201905-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/tvpreview201905-180.jpg" alt="Top TV Shows to Watch (and Stream) in May Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/now-streaming-on-amazon-instant-video">What to Watch Now on Prime Video</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/may-2019-tv-preview">Top TV Shows to Watch (and Stream) in May</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/tv">More Reports</a>
@@ -588,6 +590,40 @@
     
     <ol class="list_products list_product_condensed">
                                             <li class="product game_product first_product">
+                <div class="product_wrap">
+                    <div class="basic_stat product_title">
+                        <a href="/game/playstation-4/theseus">
+                            Theseus
+                                                    </a>
+                    </div>
+                    <div class="basic_stat product_score brief_metascore">
+                                                    
+
+        
+<div class="metascore_w small game mixed">56</div>
+
+                                            </div>
+                                <div class="more_stats condensed_stats">
+            <ul class="more_stats">
+                                                <li class="stat product_avguserscore">
+                        <span class="label">User:</span>
+    <span class="data textscore textscore_mixed">6.4</span>
+
+                </li>
+                                                    <li class="stat attributes">
+                                                    PlayStation VR Required                                            </li>
+                                                                                                                    <li class="stat release_date full_release_date">
+                        <span class="label">Release Date:</span>
+                        <span class="data">Jul 26, 2017</span>
+                    </li>
+                            </ul>
+        </div>
+    
+
+
+                </div>
+            </li>
+                                            <li class="product game_product">
                 <div class="product_wrap">
                     <div class="basic_stat product_title">
                         <a href="/game/playstation-4/lethal-vr">
@@ -1115,7 +1151,7 @@
             <ul class="more_stats">
                                                 <li class="stat product_avguserscore">
                         <span class="label">User:</span>
-    <span class="data textscore textscore_unfavorable">3.4</span>
+    <span class="data textscore textscore_unfavorable">3.6</span>
 
                 </li>
                                                     <li class="stat attributes">
@@ -1370,24 +1406,7 @@
                 
                 
 
-<ol class="list_products list_product_summaries"><li class="product has_small_image first_product"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/game/playstation-4/days-gone">Days Gone</a></h3></div></div>            <div class="more_stats">
-            <ul class="more_stats">
-                                    <li class="stat release_date">
-                        <span class="label">Release Date:</span>
-                        <span class="data">Apr 26, 2019</span>
-                    </li>
-                                                                                                        <li class="stat platform_list">
-                        <span class="label">Platform:</span>
-                        <span class="data"><a href="/game/playstation-4">PlayStation 4</a></span>
-                    </li>
-                                                    <li class="stat">
-                        <a href="/game/playstation-4/days-gone/trailers">View Trailers &raquo;</a>
-                    </li>
-                            </ul>
-        </div>
-    
-
-</div></div><div class="product_basics product_image small_image"><a href="/game/playstation-4/days-gone"><img class="product_image small_image" src="https://static.metacritic.com/images/products/games/9/d80393760b8a87ee6fc1de3f5e0bcd3a-53.jpg" alt="Days Gone Image" /></a></div></div></li><li class="product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/game/playstation-4/rage-2">Rage 2</a></h3></div></div>            <div class="more_stats">
+<ol class="list_products list_product_summaries"><li class="product has_small_image first_product"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/game/playstation-4/rage-2">Rage 2</a></h3></div></div>            <div class="more_stats">
             <ul class="more_stats">
                                     <li class="stat release_date">
                         <span class="label">Release Date:</span>
@@ -1404,21 +1423,41 @@
         </div>
     
 
-</div></div><div class="product_basics product_image small_image"><a href="/game/playstation-4/rage-2"><img class="product_image small_image" src="https://static.metacritic.com/images/products/games/0/3ca8c1aa25bd36cce47878cc25e35025-53.jpg" alt="Rage 2 Image" /></a></div></div></li><li class="product has_small_image last_product"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/game/playstation-4/blood-truth">Blood & Truth</a></h3></div></div>            <div class="more_stats">
+</div></div><div class="product_basics product_image small_image"><a href="/game/playstation-4/rage-2"><img class="product_image small_image" src="https://static.metacritic.com/images/products/games/0/3ca8c1aa25bd36cce47878cc25e35025-53.jpg" alt="Rage 2 Image" /></a></div></div></li><li class="product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/game/playstation-4/pixark">PixARK</a></h3></div></div>            <div class="more_stats">
             <ul class="more_stats">
                                     <li class="stat release_date">
                         <span class="label">Release Date:</span>
-                        <span class="data">May 28, 2019</span>
+                        <span class="data">May 31, 2019</span>
                     </li>
                                                                                                         <li class="stat platform_list">
                         <span class="label">Platform:</span>
                         <span class="data"><a href="/game/playstation-4">PlayStation 4</a></span>
                     </li>
-                                            </ul>
+                                                    <li class="stat">
+                        <a href="/game/playstation-4/pixark/trailers">View Trailers &raquo;</a>
+                    </li>
+                            </ul>
         </div>
     
 
-</div></div><div class="product_basics product_image small_image"><a href="/game/playstation-4/blood-truth"><img class="product_image small_image" src="https://static.metacritic.com/images/products/games/6/621c2b415a271f1534f75aa70ab05911-53.jpg" alt="Blood & Truth Image" /></a></div></div></li></ol>
+</div></div><div class="product_basics product_image small_image"><a href="/game/playstation-4/pixark"><img class="product_image small_image" src="https://static.metacritic.com/images/products/games/6/2459a67fdc4873826c79bca1459c4bdb-53.jpg" alt="PixARK Image" /></a></div></div></li><li class="product has_small_image last_product"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/game/playstation-4/indivisible">Indivisible</a></h3></div></div>            <div class="more_stats">
+            <ul class="more_stats">
+                                    <li class="stat release_date">
+                        <span class="label">Release Date:</span>
+                        <span class="data">Sep 10, 2019</span>
+                    </li>
+                                                                                                        <li class="stat platform_list">
+                        <span class="label">Platform:</span>
+                        <span class="data"><a href="/game/playstation-4">PlayStation 4</a></span>
+                    </li>
+                                                    <li class="stat">
+                        <a href="/game/playstation-4/indivisible/trailers">View Trailers &raquo;</a>
+                    </li>
+                            </ul>
+        </div>
+    
+
+</div></div><div class="product_basics product_image small_image"><a href="/game/playstation-4/indivisible"><img class="product_image small_image" src="https://static.metacritic.com/images/products/games/3/e5db4520ff641d5e2a26d3c77559c141-53.jpg" alt="Indivisible Image" /></a></div></div></li></ol>
 
 
             </div>
@@ -1554,45 +1593,19 @@
                 
                 
 
-<ol class="list_products list_product_summaries"><li class="product has_small_image first_product alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/game/switch/cuphead">Cuphead</a></h3></div><a class="basic_stat product_score" href="/game/switch/cuphead">
+<ol class="list_products list_product_summaries"><li class="product has_small_image first_product last_product alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/game/switch/nintendo-labo-toycon-04-vr-kit">Nintendo Labo: Toycon 04 VR Kit</a></h3></div><a class="basic_stat product_score" href="/game/switch/nintendo-labo-toycon-04-vr-kit">
 
         
-<span class="metascore_w medium game positive">86</span>
+<span class="metascore_w medium game mixed">69</span>
 </a></div>            <div class="more_stats">
             <ul class="more_stats">
                                     <li class="stat release_date">
                         <span class="label">Release Date:</span>
-                        <span class="data">Apr 18, 2019</span>
+                        <span class="data">May 12, 2019</span>
                     </li>
                                                                         <li class="stat product_avguserscore">
                             <span class="label">User Score:</span>
-    <span class="data textscore textscore_favorable">8.9</span>
-
-                    </li>
-                                                                        <li class="stat platform_list">
-                        <span class="label">Platform:</span>
-                        <span class="data"><a href="/game/switch">Switch</a></span>
-                    </li>
-                                                    <li class="stat">
-                        <a href="/game/switch/cuphead/trailers">View Trailers &raquo;</a>
-                    </li>
-                            </ul>
-        </div>
-    
-
-</div></div><div class="product_basics product_image small_image"><a href="/game/switch/cuphead"><img class="product_image small_image" src="https://static.metacritic.com/images/products/games/6/ff10db91dc7f90f6a6accdf30417f17b-53.jpg" alt="Cuphead Image" /></a></div></div></li><li class="product has_small_image"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/game/switch/final-fantasy-x-x-2-hd-remaster">Final Fantasy X / X-2 HD Remaster</a></h3></div><a class="basic_stat product_score" href="/game/switch/final-fantasy-x-x-2-hd-remaster">
-
-        
-<span class="metascore_w medium game positive">86</span>
-</a></div>            <div class="more_stats">
-            <ul class="more_stats">
-                                    <li class="stat release_date">
-                        <span class="label">Release Date:</span>
-                        <span class="data">Apr 16, 2019</span>
-                    </li>
-                                                                        <li class="stat product_avguserscore">
-                            <span class="label">User Score:</span>
-    <span class="data textscore textscore_favorable">8.6</span>
+    <span class="data textscore textscore_favorable">7.7</span>
 
                     </li>
                                                                         <li class="stat platform_list">
@@ -1603,79 +1616,7 @@
         </div>
     
 
-</div></div><div class="product_basics product_image small_image"><a href="/game/switch/final-fantasy-x-x-2-hd-remaster"><img class="product_image small_image" src="https://static.metacritic.com/images/products/games/4/4246385adce7504070784100c17c3cd8-53.jpg" alt="Final Fantasy X / X-2 HD Remaster Image" /></a></div></div></li><li class="product has_small_image alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/game/switch/katana-zero">Katana ZERO</a></h3></div><a class="basic_stat product_score" href="/game/switch/katana-zero">
-
-        
-<span class="metascore_w medium game positive">83</span>
-</a></div>            <div class="more_stats">
-            <ul class="more_stats">
-                                    <li class="stat release_date">
-                        <span class="label">Release Date:</span>
-                        <span class="data">Apr 18, 2019</span>
-                    </li>
-                                                                        <li class="stat product_avguserscore">
-                            <span class="label">User Score:</span>
-    <span class="data textscore textscore_favorable">8.1</span>
-
-                    </li>
-                                                                        <li class="stat platform_list">
-                        <span class="label">Platform:</span>
-                        <span class="data"><a href="/game/switch">Switch</a></span>
-                    </li>
-                                                    <li class="stat">
-                        <a href="/game/switch/katana-zero/trailers">View Trailers &raquo;</a>
-                    </li>
-                            </ul>
-        </div>
-    
-
-</div></div><div class="product_basics product_image small_image"><a href="/game/switch/katana-zero"><img class="product_image small_image" src="https://static.metacritic.com/images/products/games/1/2289d38efe58ccbd195bf52edaf60fb6-53.jpg" alt="Katana ZERO Image" /></a></div></div></li><li class="product has_small_image"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/game/pc/phoenix-wright-ace-attorney-trilogy">Phoenix Wright: Ace Attorney Trilogy</a></h3></div><a class="basic_stat product_score" href="/game/pc/phoenix-wright-ace-attorney-trilogy">
-
-        
-<span class="metascore_w medium game positive">82</span>
-</a></div>            <div class="more_stats">
-            <ul class="more_stats">
-                                    <li class="stat release_date">
-                        <span class="label">Release Date:</span>
-                        <span class="data">Apr  9, 2019</span>
-                    </li>
-                                                                        <li class="stat product_avguserscore">
-                            <span class="label">User Score:</span>
-    <span class="data textscore textscore_favorable">8.0</span>
-
-                    </li>
-                                                                        <li class="stat platform_list">
-                        <span class="label">Platform:</span>
-                        <span class="data"><a href="/game/pc">PC</a></span>
-                    </li>
-                                            </ul>
-        </div>
-    
-
-</div></div><div class="product_basics product_image small_image"><a href="/game/pc/phoenix-wright-ace-attorney-trilogy"><img class="product_image small_image" src="https://static.metacritic.com/images/products/games/6/c82403c856381f585d22b63a13909472-53.jpg" alt="Phoenix Wright: Ace Attorney Trilogy Image" /></a></div></div></li><li class="product has_small_image last_product alt"><div class="wrap product_wrap"><div class="product_basics stats"><div class="basic_stats has_score"><div class="main_stats"><div class="basic_stat product_title"><h3 class="product_title"><a href="/game/playstation-4/ghost-giant">Ghost Giant</a></h3></div><a class="basic_stat product_score" href="/game/playstation-4/ghost-giant">
-
-        
-<span class="metascore_w medium game positive">82</span>
-</a></div>            <div class="more_stats">
-            <ul class="more_stats">
-                                    <li class="stat release_date">
-                        <span class="label">Release Date:</span>
-                        <span class="data">Apr 16, 2019</span>
-                    </li>
-                                                                        <li class="stat product_avguserscore">
-                            <span class="label">User Score:</span>
-    <span class="data textscore textscore_favorable">7.5</span>
-
-                    </li>
-                                                                        <li class="stat platform_list">
-                        <span class="label">Platform:</span>
-                        <span class="data"><a href="/game/playstation-4">PlayStation 4</a></span>
-                    </li>
-                                            </ul>
-        </div>
-    
-
-</div></div><div class="product_basics product_image small_image"><a href="/game/playstation-4/ghost-giant"><img class="product_image small_image" src="https://static.metacritic.com/images/products/games/5/2f2ae83e74e732b7244cc23399bfd919-53.jpg" alt="Ghost Giant Image" /></a></div></div></li></ol>
+</div></div><div class="product_basics product_image small_image"><a href="/game/switch/nintendo-labo-toycon-04-vr-kit"><img class="product_image small_image" src="https://static.metacritic.com/images/products/games/7/0672368d8fcc8764b616a02ffea7853b-53.jpg" alt="Nintendo Labo: Toycon 04 VR Kit Image" /></a></div></div></li></ol>
 
 
             </div>
@@ -2149,6 +2090,6 @@
     
 </div>
 
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"860f7644b8","applicationID":"2033002","transactionName":"MgQEZ0dYCxEAVRBbDQtOJUZGTQoPTmUHXRAAJw9fQVwXWFtRBV8H","queueTime":0,"applicationTime":1267,"atts":"HkMTEQ9CGE5DV0YIGRgc","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"860f7644b8","applicationID":"2033002","transactionName":"MgQEZ0dYCxEAVRBbDQtOJUZGTQoPTmUHXRAAJw9fQVwXWFtRBV8H","queueTime":0,"applicationTime":2658,"atts":"HkMTEQ9CGE5DV0YIGRgc","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
 

@@ -40,8 +40,8 @@
     
     <link rel="stylesheet" href="/css/fonts/proxima-nova/stylesheet.css" type="text/css" charset="utf-8" />
     
-    <link rel="stylesheet" href="/css/global.min.1555004917.css" type="text/css">
-<link rel="stylesheet" href="/css/product/base.min.1555004825.css" type="text/css">
+    <link rel="stylesheet" href="/css/global.min.1556566715.css" type="text/css">
+<link rel="stylesheet" href="/css/product/base.min.1556566628.css" type="text/css">
 
 
     
@@ -53,7 +53,7 @@
         <link rel="canonical" href="https://www.metacritic.com/game/playstation-4/rise-of-the-tomb-raider-20-year-celebration" />
         
     
-    
+
     
         
     
@@ -74,8 +74,10 @@
             // Google Analytics
             append('ga-lib', (('https:' == document.location.protocol)?'https://ssl':'http://www') + '.google-analytics.com/ga.js', true);
             // Omniture
-            window.gdprConsent = true;
-            if (typeof om == 'object' && typeof om.fireGdprTags != 'undefined') { om.fireGdprTags(); }
+            if (window.gdprConsent !== true) {
+                window.gdprConsent = true;
+                if (typeof om == 'object' && typeof om.fireGdprTags != 'undefined') { om.fireGdprTags(); }
+            }
             // Taboola
                         load_vendor_taboola();
                     }
@@ -87,7 +89,7 @@
     
     
     
-    <script type="text/javascript" src="/js/global.min.1555004917.js"></script>
+    <script type="text/javascript" src="/js/global.min.1556566715.js"></script>
 
 
     <script type="text/javascript">
@@ -202,11 +204,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/hulu-best-new-movies-and-shows">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/hulu201905-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/hulu201905-180.jpg" alt="What to Watch Now on Hulu Image" />
+                                        <a href="/feature/may-2019-movie-preview">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/moviepreview2019_05_johnwick-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/moviepreview2019_05_johnwick-180.jpg" alt="10 Films to See in May Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/hulu-best-new-movies-and-shows">What to Watch Now on Hulu</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/may-2019-movie-preview">10 Films to See in May</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/movie">More Reports</a>
@@ -238,11 +240,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/major-upcoming-video-game-release-dates-xbox-ps4-pc-switch">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/gamescorecard_2019_spring2-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/gamescorecard_2019_spring2-180.jpg" alt="Notable Video Game Releases: New and Upcoming Image" />
+                                        <a href="/feature/best-of-april-2019">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/bestof_2019_04-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/bestof_2019_04-180.jpg" alt="Best of April 2019: Top Albums, Games, Movies & TV Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/major-upcoming-video-game-release-dates-xbox-ps4-pc-switch">Notable Video Game Releases: New and Upcoming</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/best-of-april-2019">Best of April 2019: Top Albums, Games, Movies & TV</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/game">More Reports</a>
@@ -273,11 +275,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/now-streaming-on-amazon-instant-video">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/amazon201905-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/amazon201905-180.jpg" alt="What to Watch Now on Prime Video Image" />
+                                        <a href="/feature/may-2019-tv-preview">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/tvpreview201905-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/tvpreview201905-180.jpg" alt="Top TV Shows to Watch (and Stream) in May Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/now-streaming-on-amazon-instant-video">What to Watch Now on Prime Video</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/may-2019-tv-preview">Top TV Shows to Watch (and Stream) in May</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/tv">More Reports</a>
@@ -359,13 +361,13 @@
                 <a href="https://www.facebook.com/Metacritic" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
             </div>
 
-                                                <nav id="secondary_nav_games" class="secondary_nav_list">
-                        <a href="/browse/games/release-date/new-releases/all/date">New Releases</a>
-                        <a href="/browse/games/release-date/coming-soon/all/date">Coming Soon</a>
-                        <a href="/browse/games/score/metascore/90day/all/filtered">Best Games</a>
+                                                                                                                <nav id="secondary_nav_games" class="secondary_nav_list">
+                        <a href="/browse/games/release-date/new-releases/ps4/date">New Releases</a>
+                        <a href="/browse/games/release-date/coming-soon/ps4/date">Coming Soon</a>
+                        <a href="/browse/games/score/metascore/90day/ps4/filtered">Best Games</a>
                         <a href="/browse/games/publication/reviewed">Publications</a>
                         <a href="/browse/games/company/reviewed">Publishers</a>
-                        <a href="/browse/games/trailers/all/date">Trailers</a>
+                        <a href="/browse/games/trailers/ps4/date">Trailers</a>
                     </nav>
                                     </nav>
         <header id="primary_backdrop">
@@ -638,7 +640,7 @@
 
         
         <div class="summary">
-            <p><span class="desc">Generally favorable reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <a href="/game/playstation-4/rise-of-the-tomb-raider-20-year-celebration/user-reviews">980 Ratings</a></span></p>
+            <p><span class="desc">Generally favorable reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <a href="/game/playstation-4/rise-of-the-tomb-raider-20-year-celebration/user-reviews">987 Ratings</a></span></p>
         </div>
     </div>
 </div>
@@ -660,7 +662,7 @@
                     <div class="rating_picker_std">
                 <div class="rating_label">Rate this:</div>
                 <ul class="rating_actions rating_values rating_values_game ">
-                <input type="hidden" name="csrf" value="7180ff171c9f619e0d89feeeda3c5482" />
+                <input type="hidden" name="csrf" value="2b181614956c2e6158594cdcba2e6429" />
                                     <li class="rating_value_item rating_value_100">
                         <div class="rating_action rating_action_game rating_action_100 "
                            rel="nofollow"
@@ -805,7 +807,7 @@
                         <div class="rating_picker_std">
                             <div class="rating_label">Rate this:</div>
                             <ul class="rating_actions rating_values rating_values_game ">
-                                <input type="hidden" name="csrf" value="7180ff171c9f619e0d89feeeda3c5482" />
+                                <input type="hidden" name="csrf" value="2b181614956c2e6158594cdcba2e6429" />
                                                                     <li class="rating_value_item rating_value_100">
                                         <div class="rating_action rating_action_game rating_action_100 "
                                            rel="nofollow"
@@ -922,16 +924,16 @@
 
             <div>
                 <div class="score_details userscore_details">
-                    <div class="score_summary">
+                        <div class="score_summary">
     <div class="userscore_wrap feature_userscore">
         <div class="label">User Score</div>
                 
-<div class="metascore_w user large game tbd">tbd</div>
+<div class="metascore_w user large game positive">8.1</div>
 
 
         
         <div class="summary">
-            <p><span class="desc">No user score yet</span><span class="count"><span class="separator">- </span><span class="befirst_msg">Be the first to review!</span></span></p>
+            <p><span class="desc">Generally favorable reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <strong>987 Ratings</strong></span></p>
         </div>
     </div>
 </div>
@@ -1071,34 +1073,6 @@
                 MetaC.Video.setIMATargeting('site','games')
             </script>
             
-
-<script>
-    window.anPrebidAsyncInit = function() {
-        var prebid = new AudienceNetworkPrebid(
-            '195612451022080_220228551893803',
-            document.getElementById('ad_videoContainer')
-        );
-        prebid.getProfile(function(profile) {
-            var token = profile.token;
-            cbsiads_passFBtoken(token);
-        });
-    };
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.com/en_US/AudienceNetworkPrebid.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'an-prebid'));
-    var cbsiads_FBtoken;
-    function cbsiads_passFBtoken(token){
-        cbsiads_FBtoken = (token=='nobid' || token==null) ? null : 'fan';
-    };
-</script>
-
 <div class="video_wrapper" style="background-image: url(https://static.gamespot.com/uploads/screen_small/1197/11970954/3129623-trailer_tombraider_womanwild4_20160914.jpg);background-size:cover;">
     <div id="agegate" class="agegate">
         <div class="title">
@@ -1613,8 +1587,8 @@
                     <span class="label">Positive:</span>
                     <span class="data">
                         <a href="/game/playstation-4/rise-of-the-tomb-raider-20-year-celebration/user-reviews?dist=positive">                            <span class="total" style="width:100%;">
-                                <span class="count">95</span>
-                                <span class="distribution positive"> out of 136</span>
+                                <span class="count">97</span>
+                                <span class="distribution positive"> out of 138</span>
                             </span>
                         </a>                    </span>
                 </div>
@@ -1623,9 +1597,9 @@
                 <div class="count_wrap">
                     <span class="label">Mixed:</span>
                     <span class="data">
-                        <a href="/game/playstation-4/rise-of-the-tomb-raider-20-year-celebration/user-reviews?dist=neutral">                            <span class="total" style="width:31%;">
+                        <a href="/game/playstation-4/rise-of-the-tomb-raider-20-year-celebration/user-reviews?dist=neutral">                            <span class="total" style="width:30%;">
                                 <span class="count">29</span>
-                                <span class="distribution mixed"> out of 136</span>
+                                <span class="distribution mixed"> out of 138</span>
                             </span>
                         </a>                    </span>
                 </div>
@@ -1634,9 +1608,9 @@
                 <div class="count_wrap">
                     <span class="label">Negative:</span>
                     <span class="data">
-                        <a href="/game/playstation-4/rise-of-the-tomb-raider-20-year-celebration/user-reviews?dist=negative">                            <span class="total" style="width:13%;">
+                        <a href="/game/playstation-4/rise-of-the-tomb-raider-20-year-celebration/user-reviews?dist=negative">                            <span class="total" style="width:12%;">
                                 <span class="count">12</span>
-                                <span class="distribution negative"> out of 136</span>
+                                <span class="distribution negative"> out of 138</span>
                             </span>
                         </a>                    </span>
                 </div>
@@ -1749,17 +1723,17 @@
                         
 
 
-                                                                                    <li id="user_review_7098545" class="review user_review">
+                                                                                    <li id="user_review_6756588" class="review user_review">
                     <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
                         <div class="review_content" >
                             <div class="review_section">
                                 <div class="review_stats">
                                     <div class="review_critic">
                                         <div class="name">
-                                                                                            <a href="/user/VirgonoShaka">VirgonoShaka</a>
+                                                                                            <a href="/user/hokido">hokido</a>
                                                                                                                                 </div>
 
-                                                                                    <div class="date">Mar 19, 2017</div>
+                                                                                    <div class="date">Oct 18, 2016</div>
                                                                             </div>
                                     
                                     <div class="review_grade">
@@ -1770,7 +1744,7 @@
                                 </div>
                                 <div class="review_body">
                                                         
-                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_7098545"><span class="blurb blurb_collapsed">This game works in essence because it maintains the core features that made the first game excellent, and adds to ir in general. Adds more</span><span class="blurb blurb_expanded">This game works in essence because it maintains the core features that made the first game excellent, and adds to ir in general. Adds more gadgets, more enviroments, more mechanics, more weapons and more crafting. The only problemas I see in general are the lack of different locations, i would have loved to go to more countries or the like, like an indiana jones movie, and also that more dinamic enviroments, maybe different locations for the animals, or people reacting in different ways in different points of the game. But in general, the main core mechanics are excellent, the voice acting is excellent, the story is very good with a great development for lara, interesting mystery, good villains, and leaving with a sense of wanting more. Special shout yo the DLC in croft manor whic i loved. CAn't wait to see more of the franchise. More than recommended for anyone.</span><span class="blurb_etc">&hellip;</span> <a rel="nofollow" class="toggle_expand_collapse toggle_expand" href="/game/playstation-4/rise-of-the-tomb-raider-20-year-celebration?user_review_id=7098545">Expand</a></span>
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_6756588"><span class="blurb blurb_collapsed">Tomb Raider is now 20 years old, damn i feel old, age however has not slowed down Lara Croft and she returns for the sequel to 2013's reboot</span><span class="blurb blurb_expanded">Tomb Raider is now 20 years old, damn i feel old, age however has not slowed down Lara Croft and she returns for the sequel to 2013's reboot and i am happy to report they have managed to make another top quality Tomb Raider game building on what they did with the reboot tightening up gameplay and improving the exploration aspects of the game and the bow is still on of the best gaming bows around. also it was nice to return to Croft Manor<br/><br/>Overall it is still behind the Uncharted series but the gap has closed significantly i am interested to see where we go next with Lara and see how her war with Trinity progresses.</span><span class="blurb_etc">&hellip;</span> <a rel="nofollow" class="toggle_expand_collapse toggle_expand" href="/game/playstation-4/rise-of-the-tomb-raider-20-year-celebration?user_review_id=6756588">Expand</a></span>
             </div>
 
                             </div>
@@ -1781,9 +1755,9 @@
     <div class="rating_thumbs">
         			<div class="helpful_summary thumb_count">
 				<a href="https://secure.metacritic.com/login">
-				<span class="total_ups">3</span>
+				<span class="total_ups">5</span>
 				of 
-				<span class="total_thumbs">5</span>
+				<span class="total_thumbs">6</span>
 				users found this helpful
                 </a>
 			</div>
@@ -1893,17 +1867,17 @@
                                                     </div>
                     </div></div></div></div>
                 </li>
-                                                                                    <li id="user_review_8505207" class="review user_review">
+                                                                                    <li id="user_review_8792724" class="review user_review">
                     <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
                         <div class="review_content" >
                             <div class="review_section">
                                 <div class="review_stats">
                                     <div class="review_critic">
                                         <div class="name">
-                                                                                            <a href="/user/siphus007">siphus007</a>
+                                                                                            <a href="/user/lipton5001">lipton5001</a>
                                                                                                                                 </div>
 
-                                                                                    <div class="date">Jul 15, 2018</div>
+                                                                                    <div class="date">Nov 13, 2018</div>
                                                                             </div>
                                     
                                     <div class="review_grade">
@@ -1914,7 +1888,7 @@
                                 </div>
                                 <div class="review_body">
                                                         
-                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_8505207"><span class="blurb blurb_collapsed">More of the same while lesser of a game. For all of the grit, intensity, great characters, and brilliant Lara Croft character development in</span><span class="blurb blurb_expanded">More of the same while lesser of a game. For all of the grit, intensity, great characters, and brilliant Lara Croft character development in the 2013 reboot, this is essentially the same game without those aforementioned things that made it so special and immersive. I won't crap all over this game because I still fairly enjoyed it, and finished it, and don't feel like I wasted my time. But there's something tremendously underwhelming about this game, and it seems to be a toss-up as to whether you'll actually feel that, or have a great time and love every minute.<br/><br/>As for specific cons, the main villains are stale and confusing, the story is all over the place, the weapons are about the same, the unmemorable set pieces lack intrigue, characters' decisions don't make much sense, and the writing is suspect. That's what to watch out for, but the rest isn't half-bad. Enjoy.</span><span class="blurb_etc">&hellip;</span> <a rel="nofollow" class="toggle_expand_collapse toggle_expand" href="/game/playstation-4/rise-of-the-tomb-raider-20-year-celebration?user_review_id=8505207">Expand</a></span>
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_8792724"><span class="blurb blurb_collapsed">A good game. Not great or awesome, but 100% worth playing through.<br/><br/>GREAT: Visuals - this game, although somewhat crippled by the ps4 pro</span><span class="blurb blurb_expanded">A good game. Not great or awesome, but 100% worth playing through.<br/><br/>GREAT: Visuals - this game, although somewhat crippled by the ps4 pro being still rather very weak - are very beautiful; I've had people pop in and immediately say how pretty it was.<br/><br/>Also, after finishing the game, the map is split into zones, which tell you how much % complete each one is -- I find this awesome (hear that 2k ? mafia 2 anyone ?).<br/><br/>SO-SO: the gameplay dynamics, while quite enjoyable, could have been a bit improved, on the 2nd difficulty level (1 above the easiest), it's a bit too easy I found (and the 3rd one up was a bit too hard for a very quick play-through (I had bought rdr2)).<br/><br/>On the easiest you could literally finish off almost all opponents with the melee weapon (which in select cases literally got you stuck - for example the mission "Survive the Ambush by the D******* Ones", if you would melee kill everyone, the gates wouldn't open and you'd literally be stuck - you need to shoot with weapons there). I got very pissed off when I wasted a good hour on that mission ... other stuff like the bow are indeed very fun to use, and make for very interesting stealth approaches in select areas.<br/><br/>BAD: honestly the voice active for Lara I found incredibly annoying - she has a very artificial and forced British accent; I'm not a native speaker and truly love all accents, texan, canadian, australian, scotish british -- you name it I love it -- but when 90% of your energy goes into faking me a posh british accent ... I don't know ... really pissed me off -- you either get used to it or it gets better as you progress through the game. It pissed me off enough to write .. what .. 5 6 lines on it so ... yeah. The divinity and god and what not was also not my favorite topic, but, meh, that I didn't take points away for.<br/><br/>CONCLUSION: especially at what it costs now - it really shouldn't be a game you didn't play - it really is good fun</span><span class="blurb_etc">&hellip;</span> <a rel="nofollow" class="toggle_expand_collapse toggle_expand" href="/game/playstation-4/rise-of-the-tomb-raider-20-year-celebration?user_review_id=8792724">Expand</a></span>
             </div>
 
                             </div>
@@ -1927,7 +1901,7 @@
 				<a href="https://secure.metacritic.com/login">
 				<span class="total_ups">0</span>
 				of 
-				<span class="total_thumbs">0</span>
+				<span class="total_thumbs">1</span>
 				users found this helpful
                 </a>
 			</div>
@@ -1975,7 +1949,7 @@
 				<a href="https://secure.metacritic.com/login">
 				<span class="total_ups">1</span>
 				of 
-				<span class="total_thumbs">4</span>
+				<span class="total_thumbs">5</span>
 				users found this helpful
                 </a>
 			</div>
@@ -1990,7 +1964,7 @@
                     </div></div></div></div>
                 </li>
                                             </ol>
-                                    <p class="see_all"><a href="/game/playstation-4/rise-of-the-tomb-raider-20-year-celebration/user-reviews">See all 136 User Reviews</a></p>
+                                    <p class="see_all"><a href="/game/playstation-4/rise-of-the-tomb-raider-20-year-celebration/user-reviews">See all 138 User Reviews</a></p>
                                                                 </div>
     </div>
     </div>
@@ -2459,27 +2433,6 @@
                                     
 
         
-    <a class="metascore_anchor" href="/game/playstation-4/red-dead-redemption-2">
-<span class="metascore_w small game positive">97</span>
-    </a>
-
-                        </td>
-    <td class="title_col">
-                    <a class="product_title" href="/game/playstation-4/red-dead-redemption-2">
-                    Red Dead Redemption 2
-                    </a>
-        
-            </td>
-</tr>
-
-                                            
-    
-
-<tr class="score_title_row">
-    <td class="score_col">
-                                    
-
-        
     <a class="metascore_anchor" href="/game/playstation-4/resident-evil-2">
 <span class="metascore_w small game positive">90</span>
     </a>
@@ -2522,27 +2475,6 @@
                                     
 
         
-    <a class="metascore_anchor" href="/game/playstation-4/soulcalibur-vi">
-<span class="metascore_w small game positive">84</span>
-    </a>
-
-                        </td>
-    <td class="title_col">
-                    <a class="product_title" href="/game/playstation-4/soulcalibur-vi">
-                    SoulCalibur VI
-                    </a>
-        
-            </td>
-</tr>
-
-                                            
-    
-
-<tr class="score_title_row">
-    <td class="score_col">
-                                    
-
-        
     <a class="metascore_anchor" href="/game/playstation-4/kingdom-hearts-iii">
 <span class="metascore_w small game positive">83</span>
     </a>
@@ -2551,27 +2483,6 @@
     <td class="title_col">
                     <a class="product_title" href="/game/playstation-4/kingdom-hearts-iii">
                     Kingdom Hearts III
-                    </a>
-        
-            </td>
-</tr>
-
-                                            
-    
-
-<tr class="score_title_row">
-    <td class="score_col">
-                                    
-
-        
-    <a class="metascore_anchor" href="/game/playstation-4/tom-clancys-the-division-2">
-<span class="metascore_w small game positive">82</span>
-    </a>
-
-                        </td>
-    <td class="title_col">
-                    <a class="product_title" href="/game/playstation-4/tom-clancys-the-division-2">
-                    Tom Clancy's The Division 2
                     </a>
         
             </td>
@@ -2614,6 +2525,27 @@
     <td class="title_col">
                     <a class="product_title" href="/game/playstation-4/hitman-2">
                     Hitman 2
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/tom-clancys-the-division-2">
+<span class="metascore_w small game positive">82</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/tom-clancys-the-division-2">
+                    Tom Clancy's The Division 2
                     </a>
         
             </td>
@@ -2732,6 +2664,27 @@
                                     
 
         
+    <a class="metascore_anchor" href="/game/playstation-4/my-time-at-portia">
+<span class="metascore_w small game mixed">74</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/my-time-at-portia">
+                    My Time At Portia
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
     <a class="metascore_anchor" href="/game/playstation-4/battlefield-v">
 <span class="metascore_w small game mixed">73</span>
     </a>
@@ -2761,6 +2714,27 @@
     <td class="title_col">
                     <a class="product_title" href="/game/playstation-4/ride-3">
                     RIDE 3
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/days-gone">
+<span class="metascore_w small game mixed">72</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/days-gone">
+                    Days Gone
                     </a>
         
             </td>
@@ -3105,7 +3079,8 @@
     var MC_UUID = uuid.v1();
 </script>
 
-                                                                                                                                                            
+                                                                                                                                                                                                                                                    
+    
 
  
 <script language="JavaScript" type="text/javascript">
@@ -3164,6 +3139,8 @@
                     googletag.pubads().setTargeting("game", "rise-of-the-tomb-raider-20-year-celebration");
                     googletag.pubads().setTargeting("con", "playstation-4");
                     googletag.pubads().setTargeting("franchise", "Tomb-Raider");
+                    googletag.pubads().setTargeting("genre", "action-adventure, ");
+                    googletag.pubads().setTargeting("score", "88");
                             googletag.pubads().setTargeting("test", "mcold");
                 
         googletag.pubads().setTargeting("vguid", MC_UUID);
@@ -3217,6 +3194,8 @@
                     MetaC.Video.setIMATargeting("game", "rise-of-the-tomb-raider-20-year-celebration");
                     MetaC.Video.setIMATargeting("con", "playstation-4");
                     MetaC.Video.setIMATargeting("franchise", "Tomb-Raider");
+                    MetaC.Video.setIMATargeting("genre", "action-adventure, ");
+                    MetaC.Video.setIMATargeting("score", "88");
                     
     }
     
@@ -3385,6 +3364,6 @@
     
 </div>
 
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"860f7644b8","applicationID":"2033002","transactionName":"MgQEZ0dYCxEAVRBbDQtOJUZGTQoPTnEFXwc1EwlXQFoRWFtfClYHHQ==","queueTime":0,"applicationTime":597,"atts":"HkMTEQ9CGE5DV0YIGRgc","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"860f7644b8","applicationID":"2033002","transactionName":"MgQEZ0dYCxEAVRBbDQtOJUZGTQoPTnEFXwc1EwlXQFoRWFtfClYHHQ==","queueTime":0,"applicationTime":4814,"atts":"HkMTEQ9CGE5DV0YIGRgc","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
 

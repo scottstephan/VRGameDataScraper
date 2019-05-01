@@ -40,8 +40,8 @@
     
     <link rel="stylesheet" href="/css/fonts/proxima-nova/stylesheet.css" type="text/css" charset="utf-8" />
     
-    <link rel="stylesheet" href="/css/global.min.1555004917.css" type="text/css">
-<link rel="stylesheet" href="/css/product/base.min.1555004825.css" type="text/css">
+    <link rel="stylesheet" href="/css/global.min.1556566715.css" type="text/css">
+<link rel="stylesheet" href="/css/product/base.min.1556566628.css" type="text/css">
 
 
     
@@ -53,7 +53,7 @@
         <link rel="canonical" href="https://www.metacritic.com/game/playstation-4/tekken-7" />
         
     
-    
+
     
         
     
@@ -74,8 +74,10 @@
             // Google Analytics
             append('ga-lib', (('https:' == document.location.protocol)?'https://ssl':'http://www') + '.google-analytics.com/ga.js', true);
             // Omniture
-            window.gdprConsent = true;
-            if (typeof om == 'object' && typeof om.fireGdprTags != 'undefined') { om.fireGdprTags(); }
+            if (window.gdprConsent !== true) {
+                window.gdprConsent = true;
+                if (typeof om == 'object' && typeof om.fireGdprTags != 'undefined') { om.fireGdprTags(); }
+            }
             // Taboola
                         load_vendor_taboola();
                     }
@@ -87,7 +89,7 @@
     
     
     
-    <script type="text/javascript" src="/js/global.min.1555004917.js"></script>
+    <script type="text/javascript" src="/js/global.min.1556566715.js"></script>
 
 
     <script type="text/javascript">
@@ -202,11 +204,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/hulu-best-new-movies-and-shows">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/hulu201905-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/hulu201905-180.jpg" alt="What to Watch Now on Hulu Image" />
+                                        <a href="/feature/may-2019-movie-preview">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/moviepreview2019_05_johnwick-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/moviepreview2019_05_johnwick-180.jpg" alt="10 Films to See in May Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/hulu-best-new-movies-and-shows">What to Watch Now on Hulu</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/may-2019-movie-preview">10 Films to See in May</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/movie">More Reports</a>
@@ -238,11 +240,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/major-upcoming-video-game-release-dates-xbox-ps4-pc-switch">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/gamescorecard_2019_spring2-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/gamescorecard_2019_spring2-180.jpg" alt="Notable Video Game Releases: New and Upcoming Image" />
+                                        <a href="/feature/best-of-april-2019">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/bestof_2019_04-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/bestof_2019_04-180.jpg" alt="Best of April 2019: Top Albums, Games, Movies & TV Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/major-upcoming-video-game-release-dates-xbox-ps4-pc-switch">Notable Video Game Releases: New and Upcoming</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/best-of-april-2019">Best of April 2019: Top Albums, Games, Movies & TV</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/game">More Reports</a>
@@ -273,11 +275,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/now-streaming-on-amazon-instant-video">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/amazon201905-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/amazon201905-180.jpg" alt="What to Watch Now on Prime Video Image" />
+                                        <a href="/feature/may-2019-tv-preview">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/tvpreview201905-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/tvpreview201905-180.jpg" alt="Top TV Shows to Watch (and Stream) in May Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/now-streaming-on-amazon-instant-video">What to Watch Now on Prime Video</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/may-2019-tv-preview">Top TV Shows to Watch (and Stream) in May</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/tv">More Reports</a>
@@ -359,13 +361,13 @@
                 <a href="https://www.facebook.com/Metacritic" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
             </div>
 
-                                                                                                                <nav id="secondary_nav_games" class="secondary_nav_list">
-                        <a href="/browse/games/release-date/new-releases/ps4/date">New Releases</a>
-                        <a href="/browse/games/release-date/coming-soon/ps4/date">Coming Soon</a>
-                        <a href="/browse/games/score/metascore/90day/ps4/filtered">Best Games</a>
+                                                <nav id="secondary_nav_games" class="secondary_nav_list">
+                        <a href="/browse/games/release-date/new-releases/all/date">New Releases</a>
+                        <a href="/browse/games/release-date/coming-soon/all/date">Coming Soon</a>
+                        <a href="/browse/games/score/metascore/90day/all/filtered">Best Games</a>
                         <a href="/browse/games/publication/reviewed">Publications</a>
                         <a href="/browse/games/company/reviewed">Publishers</a>
-                        <a href="/browse/games/trailers/ps4/date">Trailers</a>
+                        <a href="/browse/games/trailers/all/date">Trailers</a>
                     </nav>
                                     </nav>
         <header id="primary_backdrop">
@@ -653,7 +655,7 @@
 
         
         <div class="summary">
-            <p><span class="desc">Mixed or average reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <a href="/game/playstation-4/tekken-7/user-reviews">573 Ratings</a></span></p>
+            <p><span class="desc">Mixed or average reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <a href="/game/playstation-4/tekken-7/user-reviews">581 Ratings</a></span></p>
         </div>
     </div>
 </div>
@@ -675,7 +677,7 @@
                     <div class="rating_picker_std">
                 <div class="rating_label">Rate this:</div>
                 <ul class="rating_actions rating_values rating_values_game ">
-                <input type="hidden" name="csrf" value="e883632f279a71ddac5c4970cfcd46af" />
+                <input type="hidden" name="csrf" value="6070a3b3060d33cd23505f6471007c05" />
                                     <li class="rating_value_item rating_value_100">
                         <div class="rating_action rating_action_game rating_action_100 "
                            rel="nofollow"
@@ -820,7 +822,7 @@
                         <div class="rating_picker_std">
                             <div class="rating_label">Rate this:</div>
                             <ul class="rating_actions rating_values rating_values_game ">
-                                <input type="hidden" name="csrf" value="e883632f279a71ddac5c4970cfcd46af" />
+                                <input type="hidden" name="csrf" value="6070a3b3060d33cd23505f6471007c05" />
                                                                     <li class="rating_value_item rating_value_100">
                                         <div class="rating_action rating_action_game rating_action_100 "
                                            rel="nofollow"
@@ -937,16 +939,16 @@
 
             <div>
                 <div class="score_details userscore_details">
-                        <div class="score_summary">
+                    <div class="score_summary">
     <div class="userscore_wrap feature_userscore">
         <div class="label">User Score</div>
                 
-<div class="metascore_w user large game mixed">6.8</div>
+<div class="metascore_w user large game tbd">tbd</div>
 
 
         
         <div class="summary">
-            <p><span class="desc">Mixed or average reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <strong>573 Ratings</strong></span></p>
+            <p><span class="desc">No user score yet</span><span class="count"><span class="separator">- </span><span class="befirst_msg">Be the first to review!</span></span></p>
         </div>
     </div>
 </div>
@@ -1086,34 +1088,6 @@
                 MetaC.Video.setIMATargeting('site','games')
             </script>
             
-
-<script>
-    window.anPrebidAsyncInit = function() {
-        var prebid = new AudienceNetworkPrebid(
-            '195612451022080_220228551893803',
-            document.getElementById('ad_videoContainer')
-        );
-        prebid.getProfile(function(profile) {
-            var token = profile.token;
-            cbsiads_passFBtoken(token);
-        });
-    };
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.com/en_US/AudienceNetworkPrebid.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'an-prebid'));
-    var cbsiads_FBtoken;
-    function cbsiads_passFBtoken(token){
-        cbsiads_FBtoken = (token=='nobid' || token==null) ? null : 'fan';
-    };
-</script>
-
 <div class="video_wrapper" style="background-image: url(https://static.gamespot.com/uploads/screen_small/1574/15746725/3434709-trailer_tekken_201895.jpg);background-size:cover;">
     <div id="agegate" class="agegate">
         <div class="title">
@@ -1628,8 +1602,8 @@
                     <span class="label">Positive:</span>
                     <span class="data">
                         <a href="/game/playstation-4/tekken-7/user-reviews?dist=positive">                            <span class="total" style="width:100%;">
-                                <span class="count">67</span>
-                                <span class="distribution positive"> out of 130</span>
+                                <span class="count">70</span>
+                                <span class="distribution positive"> out of 133</span>
                             </span>
                         </a>                    </span>
                 </div>
@@ -1638,9 +1612,9 @@
                 <div class="count_wrap">
                     <span class="label">Mixed:</span>
                     <span class="data">
-                        <a href="/game/playstation-4/tekken-7/user-reviews?dist=neutral">                            <span class="total" style="width:43%;">
+                        <a href="/game/playstation-4/tekken-7/user-reviews?dist=neutral">                            <span class="total" style="width:41%;">
                                 <span class="count">29</span>
-                                <span class="distribution mixed"> out of 130</span>
+                                <span class="distribution mixed"> out of 133</span>
                             </span>
                         </a>                    </span>
                 </div>
@@ -1649,9 +1623,9 @@
                 <div class="count_wrap">
                     <span class="label">Negative:</span>
                     <span class="data">
-                        <a href="/game/playstation-4/tekken-7/user-reviews?dist=negative">                            <span class="total" style="width:51%;">
+                        <a href="/game/playstation-4/tekken-7/user-reviews?dist=negative">                            <span class="total" style="width:49%;">
                                 <span class="count">34</span>
-                                <span class="distribution negative"> out of 130</span>
+                                <span class="distribution negative"> out of 133</span>
                             </span>
                         </a>                    </span>
                 </div>
@@ -1844,9 +1818,9 @@
     <div class="rating_thumbs">
         			<div class="helpful_summary thumb_count">
 				<a href="https://secure.metacritic.com/login">
-				<span class="total_ups">2</span>
+				<span class="total_ups">3</span>
 				of 
-				<span class="total_thumbs">5</span>
+				<span class="total_thumbs">6</span>
 				users found this helpful
                 </a>
 			</div>
@@ -1860,17 +1834,17 @@
                                                     </div>
                     </div></div></div></div>
                 </li>
-                                                                                    <li id="user_review_8559882" class="review user_review">
+                                                                                    <li id="user_review_8600244" class="review user_review">
                     <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
                         <div class="review_content" >
                             <div class="review_section">
                                 <div class="review_stats">
                                     <div class="review_critic">
                                         <div class="name">
-                                                                                            <a href="/user/DanBenevenuto">DanBenevenuto</a>
+                                                                                            <a href="/user/TatsMcGee">TatsMcGee</a>
                                                                                                                                 </div>
 
-                                                                                    <div class="date">Aug 16, 2018</div>
+                                                                                    <div class="date">Sep  8, 2018</div>
                                                                             </div>
                                     
                                     <div class="review_grade">
@@ -1881,7 +1855,7 @@
                                 </div>
                                 <div class="review_body">
                                                         
-                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_8559882"><span class="blurb blurb_collapsed">Tekken 7 still one of the best fighting games, this version has a new story mode focused on Heihachi and Kazuya's rivalry. It Brings classic</span><span class="blurb blurb_expanded">Tekken 7 still one of the best fighting games, this version has a new story mode focused on Heihachi and Kazuya's rivalry. It Brings classic characters  and some new combatants, also new maps and a new soundtrack. But, It starts adding DLC content unlike his past versions.</span><span class="blurb_etc">&hellip;</span> <a rel="nofollow" class="toggle_expand_collapse toggle_expand" href="/game/playstation-4/tekken-7?user_review_id=8559882">Expand</a></span>
+                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_8600244"><span class="blurb blurb_collapsed">I have never been a huge fan of 3D Fighting games, its just personal preference. I’ve always recognized Tekken as the staple 3D Fighter but</span><span class="blurb blurb_expanded">I have never been a huge fan of 3D Fighting games, its just personal preference. I’ve always recognized Tekken as the staple 3D Fighter but got into the game too much or taken it very seriously.  This game is right on par with the rest of the franchise, it is a masterpiece.<br/><br/>I don’t see myself playing this game on a regular basis but if I were to get into a 3D Fighting game, this would be it. Adding Akuma such a smart decision because it helps bridge the gap between 2D Fighting game players and 3D Fighting Game players. I can’t fathom how they did it but doing the traditional 2D Fighting Game inputs doesn’t feel awkward nor does it look out of place. He just works so well in that game.<br/><br/>One of my favorite gameplay mechanics is the slow motion kill cam. It doesn’t happen often but basically what triggers it is if both players are low on health and they both push a button at the same time. If those criteria are met then the game slows down, zooms in and you watch the animation of the two attacks. It’s so exciting because it just ramps up the hype.<br/><br/>So to wrap things up, this is probably the best 3D Fighting Game of all time, it’s exciting and hype, it has a perfect character to help bridge the gap between 2D and 3D and finally its the best looking Fighting Game of the year. Fighting games are niche market but if you’re a fan of the genre then this is a must buy.</span><span class="blurb_etc">&hellip;</span> <a rel="nofollow" class="toggle_expand_collapse toggle_expand" href="/game/playstation-4/tekken-7?user_review_id=8600244">Expand</a></span>
             </div>
 
                             </div>
@@ -1894,7 +1868,7 @@
 				<a href="https://secure.metacritic.com/login">
 				<span class="total_ups">0</span>
 				of 
-				<span class="total_thumbs">4</span>
+				<span class="total_thumbs">3</span>
 				users found this helpful
                 </a>
 			</div>
@@ -1908,28 +1882,28 @@
                                                     </div>
                     </div></div></div></div>
                 </li>
-                                                                                    <li id="user_review_7393082" class="review user_review">
+                                                                                    <li id="user_review_8688613" class="review user_review">
                     <div class="review_btm review_btm_r"><div class="review_btm review_btm_l"><div class="review_top review_top_r"><div class="review_top review_top_l">
                         <div class="review_content" >
                             <div class="review_section">
                                 <div class="review_stats">
                                     <div class="review_critic">
                                         <div class="name">
-                                                                                            <a href="/user/SouichiroTAMARU">SouichiroTAMARU</a>
+                                                                                            <a href="/user/michaelb1928">michaelb1928</a>
                                                                                                                                 </div>
 
-                                                                                    <div class="date">Jul  6, 2017</div>
+                                                                                    <div class="date">Oct 16, 2018</div>
                                                                             </div>
                                     
                                     <div class="review_grade">
                                                 
-<div class="metascore_w user medium game negative indiv">4</div>
+<div class="metascore_w user medium game mixed indiv">5</div>
 
                                     </div>
                                 </div>
                                 <div class="review_body">
                                                         
-                                        <span class="inline_expand_collapse inline_collapsed" id="review_blurb_7393082"><span class="blurb blurb_collapsed">The last Tekken is a huge disappointment. Don´t get me wrong. There are some good features, like the options to choose any music from previous</span><span class="blurb blurb_expanded">The last Tekken is a huge disappointment. Don´t get me wrong. There are some good features, like the options to choose any music from previous Tekken games or to play most of videos from them. But there are many poorly designed features. Let me get straight to the point. There are missing some major features like replay mode in practice, the finnishing camera is awgul - you can´t even tell what is happening when it zooms in. Where is the good old replay with slow motion and camera rotating around? Where is the adventure mode from Tekken 6? You can´t turn off or set any visual effects whatsoever. And the latest 1.03 update really got me angry as it completely rearanged customization color palette, where black color is more like light grey. What gives? Why can´t there be true black color option in all outfits, users would still be able to use grey color if the like... Also XiaoYu´s leggings´ color cannot be changed, it is possible to recolor one leg only.</span><span class="blurb_etc">&hellip;</span> <a rel="nofollow" class="toggle_expand_collapse toggle_expand" href="/game/playstation-4/tekken-7?user_review_id=7393082">Expand</a></span>
+                                        <span>ewcomers, Tekken 7 beats its own path and ensures that you want to walk it, kicking various backsides along</span>
             </div>
 
                             </div>
@@ -1940,9 +1914,9 @@
     <div class="rating_thumbs">
         			<div class="helpful_summary thumb_count">
 				<a href="https://secure.metacritic.com/login">
-				<span class="total_ups">6</span>
+				<span class="total_ups">0</span>
 				of 
-				<span class="total_thumbs">12</span>
+				<span class="total_thumbs">2</span>
 				users found this helpful
                 </a>
 			</div>
@@ -2005,7 +1979,7 @@
                     </div></div></div></div>
                 </li>
                                             </ol>
-                                    <p class="see_all"><a href="/game/playstation-4/tekken-7/user-reviews">See all 130 User Reviews</a></p>
+                                    <p class="see_all"><a href="/game/playstation-4/tekken-7/user-reviews">See all 133 User Reviews</a></p>
                                                                 </div>
     </div>
     </div>
@@ -2433,27 +2407,6 @@
                                     
 
         
-    <a class="metascore_anchor" href="/game/playstation-4/red-dead-redemption-2">
-<span class="metascore_w small game positive">97</span>
-    </a>
-
-                        </td>
-    <td class="title_col">
-                    <a class="product_title" href="/game/playstation-4/red-dead-redemption-2">
-                    Red Dead Redemption 2
-                    </a>
-        
-            </td>
-</tr>
-
-                                            
-    
-
-<tr class="score_title_row">
-    <td class="score_col">
-                                    
-
-        
     <a class="metascore_anchor" href="/game/playstation-4/resident-evil-2">
 <span class="metascore_w small game positive">90</span>
     </a>
@@ -2496,27 +2449,6 @@
                                     
 
         
-    <a class="metascore_anchor" href="/game/playstation-4/soulcalibur-vi">
-<span class="metascore_w small game positive">84</span>
-    </a>
-
-                        </td>
-    <td class="title_col">
-                    <a class="product_title" href="/game/playstation-4/soulcalibur-vi">
-                    SoulCalibur VI
-                    </a>
-        
-            </td>
-</tr>
-
-                                            
-    
-
-<tr class="score_title_row">
-    <td class="score_col">
-                                    
-
-        
     <a class="metascore_anchor" href="/game/playstation-4/kingdom-hearts-iii">
 <span class="metascore_w small game positive">83</span>
     </a>
@@ -2525,27 +2457,6 @@
     <td class="title_col">
                     <a class="product_title" href="/game/playstation-4/kingdom-hearts-iii">
                     Kingdom Hearts III
-                    </a>
-        
-            </td>
-</tr>
-
-                                            
-    
-
-<tr class="score_title_row">
-    <td class="score_col">
-                                    
-
-        
-    <a class="metascore_anchor" href="/game/playstation-4/tom-clancys-the-division-2">
-<span class="metascore_w small game positive">82</span>
-    </a>
-
-                        </td>
-    <td class="title_col">
-                    <a class="product_title" href="/game/playstation-4/tom-clancys-the-division-2">
-                    Tom Clancy's The Division 2
                     </a>
         
             </td>
@@ -2588,6 +2499,27 @@
     <td class="title_col">
                     <a class="product_title" href="/game/playstation-4/hitman-2">
                     Hitman 2
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/tom-clancys-the-division-2">
+<span class="metascore_w small game positive">82</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/tom-clancys-the-division-2">
+                    Tom Clancy's The Division 2
                     </a>
         
             </td>
@@ -2706,6 +2638,27 @@
                                     
 
         
+    <a class="metascore_anchor" href="/game/playstation-4/my-time-at-portia">
+<span class="metascore_w small game mixed">74</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/my-time-at-portia">
+                    My Time At Portia
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
     <a class="metascore_anchor" href="/game/playstation-4/battlefield-v">
 <span class="metascore_w small game mixed">73</span>
     </a>
@@ -2735,6 +2688,27 @@
     <td class="title_col">
                     <a class="product_title" href="/game/playstation-4/ride-3">
                     RIDE 3
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/days-gone">
+<span class="metascore_w small game mixed">72</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/days-gone">
+                    Days Gone
                     </a>
         
             </td>
@@ -3079,8 +3053,7 @@
     var MC_UUID = uuid.v1();
 </script>
 
-                                                                                                                                                                                                                                                                                                    
-    
+                                                                                                                                                            
 
  
 <script language="JavaScript" type="text/javascript">
@@ -3139,8 +3112,6 @@
                     googletag.pubads().setTargeting("game", "tekken-7");
                     googletag.pubads().setTargeting("con", "playstation-4");
                     googletag.pubads().setTargeting("franchise", "Tekken");
-                    googletag.pubads().setTargeting("genre", "action, , ");
-                    googletag.pubads().setTargeting("score", "82");
                             googletag.pubads().setTargeting("test", "mcold");
                 
         googletag.pubads().setTargeting("vguid", MC_UUID);
@@ -3194,8 +3165,6 @@
                     MetaC.Video.setIMATargeting("game", "tekken-7");
                     MetaC.Video.setIMATargeting("con", "playstation-4");
                     MetaC.Video.setIMATargeting("franchise", "Tekken");
-                    MetaC.Video.setIMATargeting("genre", "action, , ");
-                    MetaC.Video.setIMATargeting("score", "82");
                     
     }
     
@@ -3364,6 +3333,6 @@
     
 </div>
 
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"860f7644b8","applicationID":"2033002","transactionName":"MgQEZ0dYCxEAVRBbDQtOJUZGTQoPTnEFXwc1EwlXQFoRWFtfClYHHQ==","queueTime":0,"applicationTime":5272,"atts":"HkMTEQ9CGE5DV0YIGRgc","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"860f7644b8","applicationID":"2033002","transactionName":"MgQEZ0dYCxEAVRBbDQtOJUZGTQoPTnEFXwc1EwlXQFoRWFtfClYHHQ==","queueTime":0,"applicationTime":780,"atts":"HkMTEQ9CGE5DV0YIGRgc","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
 

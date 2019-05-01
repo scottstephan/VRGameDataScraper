@@ -40,8 +40,8 @@
     
     <link rel="stylesheet" href="/css/fonts/proxima-nova/stylesheet.css" type="text/css" charset="utf-8" />
     
-    <link rel="stylesheet" href="/css/global.min.1555004917.css" type="text/css">
-<link rel="stylesheet" href="/css/product/base.min.1555004825.css" type="text/css">
+    <link rel="stylesheet" href="/css/global.min.1556566715.css" type="text/css">
+<link rel="stylesheet" href="/css/product/base.min.1556566628.css" type="text/css">
 
 
     
@@ -53,7 +53,7 @@
         <link rel="canonical" href="https://www.metacritic.com/game/playstation-4/borderlands-2-vr" />
         
     
-    
+
     
         
     
@@ -74,8 +74,10 @@
             // Google Analytics
             append('ga-lib', (('https:' == document.location.protocol)?'https://ssl':'http://www') + '.google-analytics.com/ga.js', true);
             // Omniture
-            window.gdprConsent = true;
-            if (typeof om == 'object' && typeof om.fireGdprTags != 'undefined') { om.fireGdprTags(); }
+            if (window.gdprConsent !== true) {
+                window.gdprConsent = true;
+                if (typeof om == 'object' && typeof om.fireGdprTags != 'undefined') { om.fireGdprTags(); }
+            }
             // Taboola
                         load_vendor_taboola();
                     }
@@ -87,7 +89,7 @@
     
     
     
-    <script type="text/javascript" src="/js/global.min.1555004917.js"></script>
+    <script type="text/javascript" src="/js/global.min.1556566715.js"></script>
 
 
     <script type="text/javascript">
@@ -202,11 +204,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/hulu-best-new-movies-and-shows">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/hulu201905-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/hulu201905-180.jpg" alt="What to Watch Now on Hulu Image" />
+                                        <a href="/feature/may-2019-movie-preview">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/moviepreview2019_05_johnwick-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/moviepreview2019_05_johnwick-180.jpg" alt="10 Films to See in May Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/hulu-best-new-movies-and-shows">What to Watch Now on Hulu</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/may-2019-movie-preview">10 Films to See in May</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/movie">More Reports</a>
@@ -238,11 +240,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/major-upcoming-video-game-release-dates-xbox-ps4-pc-switch">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/gamescorecard_2019_spring2-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/gamescorecard_2019_spring2-180.jpg" alt="Notable Video Game Releases: New and Upcoming Image" />
+                                        <a href="/feature/best-of-april-2019">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/bestof_2019_04-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/bestof_2019_04-180.jpg" alt="Best of April 2019: Top Albums, Games, Movies & TV Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/major-upcoming-video-game-release-dates-xbox-ps4-pc-switch">Notable Video Game Releases: New and Upcoming</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/best-of-april-2019">Best of April 2019: Top Albums, Games, Movies & TV</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/game">More Reports</a>
@@ -273,11 +275,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/now-streaming-on-amazon-instant-video">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/amazon201905-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/amazon201905-180.jpg" alt="What to Watch Now on Prime Video Image" />
+                                        <a href="/feature/may-2019-tv-preview">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/tvpreview201905-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/tvpreview201905-180.jpg" alt="Top TV Shows to Watch (and Stream) in May Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/now-streaming-on-amazon-instant-video">What to Watch Now on Prime Video</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/may-2019-tv-preview">Top TV Shows to Watch (and Stream) in May</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/tv">More Reports</a>
@@ -635,7 +637,7 @@
 
         
         <div class="summary">
-            <p><span class="desc">Generally favorable reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <a href="/game/playstation-4/borderlands-2-vr/user-reviews">52 Ratings</a></span></p>
+            <p><span class="desc">Generally favorable reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <a href="/game/playstation-4/borderlands-2-vr/user-reviews">53 Ratings</a></span></p>
         </div>
     </div>
 </div>
@@ -657,7 +659,7 @@
                     <div class="rating_picker_std">
                 <div class="rating_label">Rate this:</div>
                 <ul class="rating_actions rating_values rating_values_game ">
-                <input type="hidden" name="csrf" value="c34377abf617c3b95e35f54c5d250c9d" />
+                <input type="hidden" name="csrf" value="71ad4a82f340541dc3018790f6cabe79" />
                                     <li class="rating_value_item rating_value_100">
                         <div class="rating_action rating_action_game rating_action_100 "
                            rel="nofollow"
@@ -802,7 +804,7 @@
                         <div class="rating_picker_std">
                             <div class="rating_label">Rate this:</div>
                             <ul class="rating_actions rating_values rating_values_game ">
-                                <input type="hidden" name="csrf" value="c34377abf617c3b95e35f54c5d250c9d" />
+                                <input type="hidden" name="csrf" value="71ad4a82f340541dc3018790f6cabe79" />
                                                                     <li class="rating_value_item rating_value_100">
                                         <div class="rating_action rating_action_game rating_action_100 "
                                            rel="nofollow"
@@ -928,7 +930,7 @@
 
         
         <div class="summary">
-            <p><span class="desc">Generally favorable reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <strong>52 Ratings</strong></span></p>
+            <p><span class="desc">Generally favorable reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <strong>53 Ratings</strong></span></p>
         </div>
     </div>
 </div>
@@ -1048,34 +1050,6 @@
                 MetaC.Video.setIMATargeting('site','games')
             </script>
             
-
-<script>
-    window.anPrebidAsyncInit = function() {
-        var prebid = new AudienceNetworkPrebid(
-            '195612451022080_220228551893803',
-            document.getElementById('ad_videoContainer')
-        );
-        prebid.getProfile(function(profile) {
-            var token = profile.token;
-            cbsiads_passFBtoken(token);
-        });
-    };
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.com/en_US/AudienceNetworkPrebid.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'an-prebid'));
-    var cbsiads_FBtoken;
-    function cbsiads_passFBtoken(token){
-        cbsiads_FBtoken = (token=='nobid' || token==null) ? null : 'fan';
-    };
-</script>
-
 <div class="video_wrapper" style="background-image: url(https://static.gamespot.com/uploads/screen_small/368/3687506/3480735-gameply_borderlands2vr_12212018.jpg);background-size:cover;">
     <div id="agegate" class="agegate">
         <div class="title">
@@ -2217,27 +2191,6 @@
                                     
 
         
-    <a class="metascore_anchor" href="/game/playstation-4/red-dead-redemption-2">
-<span class="metascore_w small game positive">97</span>
-    </a>
-
-                        </td>
-    <td class="title_col">
-                    <a class="product_title" href="/game/playstation-4/red-dead-redemption-2">
-                    Red Dead Redemption 2
-                    </a>
-        
-            </td>
-</tr>
-
-                                            
-    
-
-<tr class="score_title_row">
-    <td class="score_col">
-                                    
-
-        
     <a class="metascore_anchor" href="/game/playstation-4/resident-evil-2">
 <span class="metascore_w small game positive">90</span>
     </a>
@@ -2280,27 +2233,6 @@
                                     
 
         
-    <a class="metascore_anchor" href="/game/playstation-4/soulcalibur-vi">
-<span class="metascore_w small game positive">84</span>
-    </a>
-
-                        </td>
-    <td class="title_col">
-                    <a class="product_title" href="/game/playstation-4/soulcalibur-vi">
-                    SoulCalibur VI
-                    </a>
-        
-            </td>
-</tr>
-
-                                            
-    
-
-<tr class="score_title_row">
-    <td class="score_col">
-                                    
-
-        
     <a class="metascore_anchor" href="/game/playstation-4/kingdom-hearts-iii">
 <span class="metascore_w small game positive">83</span>
     </a>
@@ -2309,27 +2241,6 @@
     <td class="title_col">
                     <a class="product_title" href="/game/playstation-4/kingdom-hearts-iii">
                     Kingdom Hearts III
-                    </a>
-        
-            </td>
-</tr>
-
-                                            
-    
-
-<tr class="score_title_row">
-    <td class="score_col">
-                                    
-
-        
-    <a class="metascore_anchor" href="/game/playstation-4/tom-clancys-the-division-2">
-<span class="metascore_w small game positive">82</span>
-    </a>
-
-                        </td>
-    <td class="title_col">
-                    <a class="product_title" href="/game/playstation-4/tom-clancys-the-division-2">
-                    Tom Clancy's The Division 2
                     </a>
         
             </td>
@@ -2372,6 +2283,27 @@
     <td class="title_col">
                     <a class="product_title" href="/game/playstation-4/hitman-2">
                     Hitman 2
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/tom-clancys-the-division-2">
+<span class="metascore_w small game positive">82</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/tom-clancys-the-division-2">
+                    Tom Clancy's The Division 2
                     </a>
         
             </td>
@@ -2490,6 +2422,27 @@
                                     
 
         
+    <a class="metascore_anchor" href="/game/playstation-4/my-time-at-portia">
+<span class="metascore_w small game mixed">74</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/my-time-at-portia">
+                    My Time At Portia
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
     <a class="metascore_anchor" href="/game/playstation-4/battlefield-v">
 <span class="metascore_w small game mixed">73</span>
     </a>
@@ -2519,6 +2472,27 @@
     <td class="title_col">
                     <a class="product_title" href="/game/playstation-4/ride-3">
                     RIDE 3
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/days-gone">
+<span class="metascore_w small game mixed">72</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/days-gone">
+                    Days Gone
                     </a>
         
             </td>
@@ -3148,6 +3122,6 @@
     
 </div>
 
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"860f7644b8","applicationID":"2033002","transactionName":"MgQEZ0dYCxEAVRBbDQtOJUZGTQoPTnEFXwc1EwlXQFoRWFtfClYHHQ==","queueTime":0,"applicationTime":2692,"atts":"HkMTEQ9CGE5DV0YIGRgc","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"860f7644b8","applicationID":"2033002","transactionName":"MgQEZ0dYCxEAVRBbDQtOJUZGTQoPTnEFXwc1EwlXQFoRWFtfClYHHQ==","queueTime":0,"applicationTime":2172,"atts":"HkMTEQ9CGE5DV0YIGRgc","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
 

@@ -11,9 +11,10 @@ import combinedata as combiner
 
 #######STUFF TO DEFINE ###############
 now = datetime.datetime.now()
-runintestmode = True #If we run the scrapers in test mode they'll use the HTML located in the root directory
+runintestmode = False #If we run the scrapers in test mode they'll use the HTML located in the root directory
 
-metacritic_maxpage = 2 #the number of pages of results to grab. right now there are only 2, but build to scale! Any additional results beyond the max # wont return relevant data for BSoup
+metacritic_maxpage = 2 #the number of pages of results to grab. right now there are only 2, but build to scale! Any
+# additional results beyond the max # wont return relevant data for BSoup
 psn_maxpage = 15 #if you go over the page limit then psn returns just the last available page. will need to check for dupes. also, psn urls start at 1, so 14 pages is 15, not 14.
 
 ###END DEFINEABLES###

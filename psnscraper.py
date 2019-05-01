@@ -61,6 +61,7 @@ def scrape(platform,maxpages,outputto_csv,now,test_mode):
     psn_url_prefix = "https://store.playstation.com"
     psn_gallerypagedata = [] #the data for the main gallery pages. we scrape the urls from here and then ping each url.
     psn_gamepagedata =[] #the data for each pages inidividual game data
+    localDir = "psn_games_html/"
 
     if test_mode is False:
         for i in range(cpage,maxpages):
@@ -99,7 +100,6 @@ def scrape(platform,maxpages,outputto_csv,now,test_mode):
                 psn_gamepagedata.append(data)
                 sh.randomsleep()
     else:
-        localDir = "psn_games_html/"
         psn_gamepagedata = sh.getLocalHTMLCache(localDir)
 
     count+=1
@@ -139,8 +139,11 @@ def scrape(platform,maxpages,outputto_csv,now,test_mode):
         sh.removeExcessCharacters(tp.price)
 
         tp.starrating = psn_gamepage.find('div', class_='star-rating')
-#There's some ludicrous white space node in front of the price that somehow eludes all of pythons whitespace detection. I finally added the return numeral function.       
-        tp.numratings = psn_gamepage.find('div', class_='provider-info__rating-count').text
+#There's some ludicrous white space node in front of the price that somehow eludes all of pythons whitespace detection. I finally added the return numeral function.
+        try:
+            tp.numratings = psn_gamepage.find('div', class_='provider-info__rating-count').text
+        except:
+            tp.numratings = "N/A"
         sh.removeExcessCharacters(tp.numratings)
         sh.removeWhiteSpace(tp.numratings)
         tp.numratings = sh.returnOnlyNumerals(tp.numratings)

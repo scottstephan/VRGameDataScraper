@@ -5,7 +5,7 @@
         	<title>Batman: Arkham VR for PlayStation 4 Reviews - Metacritic</title>
 	
     
-    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1118.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8"><script type="text/javascript">window.NREUM||(NREUM={}),__nr_require=function(e,n,t){function r(t){if(!n[t]){var o=n[t]={exports:{}};e[t][0].call(o.exports,function(n){var o=e[t][1][n];return r(o||n)},o,o.exports)}return n[t].exports}if("function"==typeof __nr_require)return __nr_require;for(var o=0;o<t.length;o++)r(t[o]);return r}({1:[function(e,n,t){function r(){}function o(e,n,t){return function(){return i(e,[c.now()].concat(u(arguments)),n?null:this,t),n?void 0:this}}var i=e("handle"),a=e(3),u=e(4),f=e("ee").get("tracer"),c=e("loader"),s=NREUM;"undefined"==typeof window.newrelic&&(newrelic=s);var p=["setPageViewName","setCustomAttribute","setErrorHandler","finished","addToTrace","inlineHit","addRelease"],d="api-",l=d+"ixn-";a(p,function(e,n){s[n]=o(d+n,!0,"api")}),s.addPageAction=o(d+"addPageAction",!0),s.setCurrentRouteName=o(d+"routeName",!0),n.exports=newrelic,s.interaction=function(){return(new r).get()};var m=r.prototype={createTracer:function(e,n){var t={},r=this,o="function"==typeof n;return i(l+"tracer",[c.now(),e,t],r),function(){if(f.emit((o?"":"no-")+"fn-start",[c.now(),r,o],t),o)try{return n.apply(this,arguments)}catch(e){throw f.emit("fn-err",[arguments,this,e],t),e}finally{f.emit("fn-end",[c.now()],t)}}}};a("actionText,setName,setAttribute,save,ignore,onEnd,getContext,end,get".split(","),function(e,n){m[n]=o(l+n)}),newrelic.noticeError=function(e,n){"string"==typeof e&&(e=new Error(e)),i("err",[e,c.now(),!1,n])}},{}],2:[function(e,n,t){function r(e,n){if(!o)return!1;if(e!==o)return!1;if(!n)return!0;if(!i)return!1;for(var t=i.split("."),r=n.split("."),a=0;a<r.length;a++)if(r[a]!==t[a])return!1;return!0}var o=null,i=null,a=/Version\/(\S+)\s+Safari/;if(navigator.userAgent){var u=navigator.userAgent,f=u.match(a);f&&u.indexOf("Chrome")===-1&&u.indexOf("Chromium")===-1&&(o="Safari",i=f[1])}n.exports={agent:o,version:i,match:r}},{}],3:[function(e,n,t){function r(e,n){var t=[],r="",i=0;for(r in e)o.call(e,r)&&(t[i]=n(r,e[r]),i+=1);return t}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],4:[function(e,n,t){function r(e,n,t){n||(n=0),"undefined"==typeof t&&(t=e?e.length:0);for(var r=-1,o=t-n||0,i=Array(o<0?0:o);++r<o;)i[r]=e[n+r];return i}n.exports=r},{}],5:[function(e,n,t){n.exports={exists:"undefined"!=typeof window.performance&&window.performance.timing&&"undefined"!=typeof window.performance.timing.navigationStart}},{}],ee:[function(e,n,t){function r(){}function o(e){function n(e){return e&&e instanceof r?e:e?f(e,u,i):i()}function t(t,r,o,i){if(!d.aborted||i){e&&e(t,r,o);for(var a=n(o),u=v(t),f=u.length,c=0;c<f;c++)u[c].apply(a,r);var p=s[y[t]];return p&&p.push([b,t,r,a]),a}}function l(e,n){h[e]=v(e).concat(n)}function m(e,n){var t=h[e];if(t)for(var r=0;r<t.length;r++)t[r]===n&&t.splice(r,1)}function v(e){return h[e]||[]}function g(e){return p[e]=p[e]||o(t)}function w(e,n){c(e,function(e,t){n=n||"feature",y[t]=n,n in s||(s[n]=[])})}var h={},y={},b={on:l,addEventListener:l,removeEventListener:m,emit:t,get:g,listeners:v,context:n,buffer:w,abort:a,aborted:!1};return b}function i(){return new r}function a(){(s.api||s.feature)&&(d.aborted=!0,s=d.backlog={})}var u="nr@context",f=e("gos"),c=e(3),s={},p={},d=n.exports=o();d.backlog=s},{}],gos:[function(e,n,t){function r(e,n,t){if(o.call(e,n))return e[n];var r=t();if(Object.defineProperty&&Object.keys)try{return Object.defineProperty(e,n,{value:r,writable:!0,enumerable:!1}),r}catch(i){}return e[n]=r,r}var o=Object.prototype.hasOwnProperty;n.exports=r},{}],handle:[function(e,n,t){function r(e,n,t,r){o.buffer([e],r),o.emit(e,n,t)}var o=e("ee").get("handle");n.exports=r,r.ee=o},{}],id:[function(e,n,t){function r(e){var n=typeof e;return!e||"object"!==n&&"function"!==n?-1:e===window?0:a(e,i,function(){return o++})}var o=1,i="nr@id",a=e("gos");n.exports=r},{}],loader:[function(e,n,t){function r(){if(!E++){var e=x.info=NREUM.info,n=l.getElementsByTagName("script")[0];if(setTimeout(s.abort,3e4),!(e&&e.licenseKey&&e.applicationID&&n))return s.abort();c(y,function(n,t){e[n]||(e[n]=t)}),f("mark",["onload",a()+x.offset],null,"api");var t=l.createElement("script");t.src="https://"+e.agent,n.parentNode.insertBefore(t,n)}}function o(){"complete"===l.readyState&&i()}function i(){f("mark",["domContent",a()+x.offset],null,"api")}function a(){return O.exists&&performance.now?Math.round(performance.now()):(u=Math.max((new Date).getTime(),u))-x.offset}var u=(new Date).getTime(),f=e("handle"),c=e(3),s=e("ee"),p=e(2),d=window,l=d.document,m="addEventListener",v="attachEvent",g=d.XMLHttpRequest,w=g&&g.prototype;NREUM.o={ST:setTimeout,SI:d.setImmediate,CT:clearTimeout,XHR:g,REQ:d.Request,EV:d.Event,PR:d.Promise,MO:d.MutationObserver};var h=""+location,y={beacon:"bam.nr-data.net",errorBeacon:"bam.nr-data.net",agent:"js-agent.newrelic.com/nr-1123.min.js"},b=g&&w&&w[m]&&!/CriOS/.test(navigator.userAgent),x=n.exports={offset:u,now:a,origin:h,features:{},xhrWrappable:b,userAgent:p};e(1),l[m]?(l[m]("DOMContentLoaded",i,!1),d[m]("load",r,!1)):(l[v]("onreadystatechange",o),d[v]("onload",r)),f("mark",["firstbyte",u],null,"api");var E=0,O=e(5)},{}]},{},["loader"]);</script>
 
     
     <meta name="description" content="Metacritic Game Reviews, Batman: Arkham VR for PlayStation 4, Batman: Arkham VR is a new Batman story set in the Arkham universe and exclusive to PlayStation VR. For the first time in a Rocksteady Ar...">
@@ -40,8 +40,8 @@
     
     <link rel="stylesheet" href="/css/fonts/proxima-nova/stylesheet.css" type="text/css" charset="utf-8" />
     
-    <link rel="stylesheet" href="/css/global.min.1555004917.css" type="text/css">
-<link rel="stylesheet" href="/css/product/base.min.1555004825.css" type="text/css">
+    <link rel="stylesheet" href="/css/global.min.1556566715.css" type="text/css">
+<link rel="stylesheet" href="/css/product/base.min.1556566628.css" type="text/css">
 
 
     
@@ -53,7 +53,7 @@
         <link rel="canonical" href="https://www.metacritic.com/game/playstation-4/batman-arkham-vr" />
         
     
-    
+
     
         
     
@@ -74,8 +74,10 @@
             // Google Analytics
             append('ga-lib', (('https:' == document.location.protocol)?'https://ssl':'http://www') + '.google-analytics.com/ga.js', true);
             // Omniture
-            window.gdprConsent = true;
-            if (typeof om == 'object' && typeof om.fireGdprTags != 'undefined') { om.fireGdprTags(); }
+            if (window.gdprConsent !== true) {
+                window.gdprConsent = true;
+                if (typeof om == 'object' && typeof om.fireGdprTags != 'undefined') { om.fireGdprTags(); }
+            }
             // Taboola
                         load_vendor_taboola();
                     }
@@ -87,7 +89,7 @@
     
     
     
-    <script type="text/javascript" src="/js/global.min.1555004917.js"></script>
+    <script type="text/javascript" src="/js/global.min.1556566715.js"></script>
 
 
     <script type="text/javascript">
@@ -202,11 +204,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/hulu-best-new-movies-and-shows">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/hulu201905-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/hulu201905-180.jpg" alt="What to Watch Now on Hulu Image" />
+                                        <a href="/feature/may-2019-movie-preview">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/moviepreview2019_05_johnwick-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/moviepreview2019_05_johnwick-180.jpg" alt="10 Films to See in May Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/hulu-best-new-movies-and-shows">What to Watch Now on Hulu</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/may-2019-movie-preview">10 Films to See in May</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/movie">More Reports</a>
@@ -238,11 +240,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/major-upcoming-video-game-release-dates-xbox-ps4-pc-switch">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/gamescorecard_2019_spring2-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/gamescorecard_2019_spring2-180.jpg" alt="Notable Video Game Releases: New and Upcoming Image" />
+                                        <a href="/feature/best-of-april-2019">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/bestof_2019_04-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/bestof_2019_04-180.jpg" alt="Best of April 2019: Top Albums, Games, Movies & TV Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/major-upcoming-video-game-release-dates-xbox-ps4-pc-switch">Notable Video Game Releases: New and Upcoming</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/best-of-april-2019">Best of April 2019: Top Albums, Games, Movies & TV</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/game">More Reports</a>
@@ -273,11 +275,11 @@
                             </span>
                             <div class="primary_feature">
                                                                                                                                                 
-                                        <a href="/feature/now-streaming-on-amazon-instant-video">
-                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/amazon201905-180.jpg)"></div>
-                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/amazon201905-180.jpg" alt="What to Watch Now on Prime Video Image" />
+                                        <a href="/feature/may-2019-tv-preview">
+                                            <div class="primary_feature_blur" style="background-image: url(https://static.metacritic.com/images/features/main/tvpreview201905-180.jpg)"></div>
+                                            <img class="primary_feature_img" src="https://static.metacritic.com/images/features/main/tvpreview201905-180.jpg" alt="Top TV Shows to Watch (and Stream) in May Image" />
                                         </a>
-                                        <span class="primary_feature_text"><a href="/feature/now-streaming-on-amazon-instant-video">What to Watch Now on Prime Video</a></span>
+                                        <span class="primary_feature_text"><a href="/feature/may-2019-tv-preview">Top TV Shows to Watch (and Stream) in May</a></span>
                                                                                                 </div>
                             <nav class="primary_dditems">
                                 <a href="/feature/tv">More Reports</a>
@@ -359,13 +361,13 @@
                 <a href="https://www.facebook.com/Metacritic" target="_blank" rel="noopener"><i class="fa fa-facebook"></i></a>
             </div>
 
-                                                                                                                <nav id="secondary_nav_games" class="secondary_nav_list">
-                        <a href="/browse/games/release-date/new-releases/ps4/date">New Releases</a>
-                        <a href="/browse/games/release-date/coming-soon/ps4/date">Coming Soon</a>
-                        <a href="/browse/games/score/metascore/90day/ps4/filtered">Best Games</a>
+                                                <nav id="secondary_nav_games" class="secondary_nav_list">
+                        <a href="/browse/games/release-date/new-releases/all/date">New Releases</a>
+                        <a href="/browse/games/release-date/coming-soon/all/date">Coming Soon</a>
+                        <a href="/browse/games/score/metascore/90day/all/filtered">Best Games</a>
                         <a href="/browse/games/publication/reviewed">Publications</a>
                         <a href="/browse/games/company/reviewed">Publishers</a>
-                        <a href="/browse/games/trailers/ps4/date">Trailers</a>
+                        <a href="/browse/games/trailers/all/date">Trailers</a>
                     </nav>
                                     </nav>
         <header id="primary_backdrop">
@@ -648,7 +650,7 @@
 
         
         <div class="summary">
-            <p><span class="desc">Mixed or average reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <a href="/game/playstation-4/batman-arkham-vr/user-reviews">157 Ratings</a></span></p>
+            <p><span class="desc">Mixed or average reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <a href="/game/playstation-4/batman-arkham-vr/user-reviews">158 Ratings</a></span></p>
         </div>
     </div>
 </div>
@@ -670,7 +672,7 @@
                     <div class="rating_picker_std">
                 <div class="rating_label">Rate this:</div>
                 <ul class="rating_actions rating_values rating_values_game ">
-                <input type="hidden" name="csrf" value="7acfca3302a9d640f73a6e295e4270bf" />
+                <input type="hidden" name="csrf" value="77c3a1130c287ca2f1292cf897bea085" />
                                     <li class="rating_value_item rating_value_100">
                         <div class="rating_action rating_action_game rating_action_100 "
                            rel="nofollow"
@@ -815,7 +817,7 @@
                         <div class="rating_picker_std">
                             <div class="rating_label">Rate this:</div>
                             <ul class="rating_actions rating_values rating_values_game ">
-                                <input type="hidden" name="csrf" value="7acfca3302a9d640f73a6e295e4270bf" />
+                                <input type="hidden" name="csrf" value="77c3a1130c287ca2f1292cf897bea085" />
                                                                     <li class="rating_value_item rating_value_100">
                                         <div class="rating_action rating_action_game rating_action_100 "
                                            rel="nofollow"
@@ -932,16 +934,16 @@
 
             <div>
                 <div class="score_details userscore_details">
-                        <div class="score_summary">
+                    <div class="score_summary">
     <div class="userscore_wrap feature_userscore">
         <div class="label">User Score</div>
                 
-<div class="metascore_w user large game mixed">7.2</div>
+<div class="metascore_w user large game tbd">tbd</div>
 
 
         
         <div class="summary">
-            <p><span class="desc">Mixed or average reviews</span><span class="count"><span class="separator">- </span><span class="based">based on</span> <strong>157 Ratings</strong></span></p>
+            <p><span class="desc">No user score yet</span><span class="count"><span class="separator">- </span><span class="befirst_msg">Be the first to review!</span></span></p>
         </div>
     </div>
 </div>
@@ -1077,34 +1079,6 @@
                 MetaC.Video.setIMATargeting('site','games')
             </script>
             
-
-<script>
-    window.anPrebidAsyncInit = function() {
-        var prebid = new AudienceNetworkPrebid(
-            '195612451022080_220228551893803',
-            document.getElementById('ad_videoContainer')
-        );
-        prebid.getProfile(function(profile) {
-            var token = profile.token;
-            cbsiads_passFBtoken(token);
-        });
-    };
-    (function(d, s, id){
-        var js, fjs = d.getElementsByTagName(s)[0];
-        if (d.getElementById(id)) {
-            return;
-        }
-        js = d.createElement(s);
-        js.id = id;
-        js.src = "//connect.facebook.com/en_US/AudienceNetworkPrebid.js";
-        fjs.parentNode.insertBefore(js, fjs);
-    }(document, 'script', 'an-prebid'));
-    var cbsiads_FBtoken;
-    function cbsiads_passFBtoken(token){
-        cbsiads_FBtoken = (token=='nobid' || token==null) ? null : 'fan';
-    };
-</script>
-
 <div class="video_wrapper" style="background-image: url(https://static.gamespot.com/uploads/screen_small/536/5360430/3215877-trailer_batmanarkvrpc_20170403.jpg);background-size:cover;">
     <div id="agegate" class="agegate">
         <div class="title">
@@ -2190,13 +2164,13 @@ After the first two or three seconds , boom ,your in</span><span class="blurb bl
                     <td class="ranking_icon">
                                                     <a href="/browse/games/score/metascore/discussed/ps4/filtered?sort=desc&year_selected=2016">
                                                 <i class="fa fa-trophy"></i>
-                        <div class="shield">63</div>
+                        <div class="shield">64</div>
                                                     </a>
                                             </td>
                     <td class="ranking_wrap">
                         <div class="ranking_title">
                             
-                                                                                        <a href="/browse/games/score/metascore/discussed/ps4/filtered?sort=desc&year_selected=2016">#63 Most Discussed PS4 Game of 2016</a>
+                                                                                        <a href="/browse/games/score/metascore/discussed/ps4/filtered?sort=desc&year_selected=2016">#64 Most Discussed PS4 Game of 2016</a>
                                                         
                             
                                                     </div>
@@ -2345,27 +2319,6 @@ After the first two or three seconds , boom ,your in</span><span class="blurb bl
                                     
 
         
-    <a class="metascore_anchor" href="/game/playstation-4/red-dead-redemption-2">
-<span class="metascore_w small game positive">97</span>
-    </a>
-
-                        </td>
-    <td class="title_col">
-                    <a class="product_title" href="/game/playstation-4/red-dead-redemption-2">
-                    Red Dead Redemption 2
-                    </a>
-        
-            </td>
-</tr>
-
-                                            
-    
-
-<tr class="score_title_row">
-    <td class="score_col">
-                                    
-
-        
     <a class="metascore_anchor" href="/game/playstation-4/resident-evil-2">
 <span class="metascore_w small game positive">90</span>
     </a>
@@ -2408,27 +2361,6 @@ After the first two or three seconds , boom ,your in</span><span class="blurb bl
                                     
 
         
-    <a class="metascore_anchor" href="/game/playstation-4/soulcalibur-vi">
-<span class="metascore_w small game positive">84</span>
-    </a>
-
-                        </td>
-    <td class="title_col">
-                    <a class="product_title" href="/game/playstation-4/soulcalibur-vi">
-                    SoulCalibur VI
-                    </a>
-        
-            </td>
-</tr>
-
-                                            
-    
-
-<tr class="score_title_row">
-    <td class="score_col">
-                                    
-
-        
     <a class="metascore_anchor" href="/game/playstation-4/kingdom-hearts-iii">
 <span class="metascore_w small game positive">83</span>
     </a>
@@ -2437,27 +2369,6 @@ After the first two or three seconds , boom ,your in</span><span class="blurb bl
     <td class="title_col">
                     <a class="product_title" href="/game/playstation-4/kingdom-hearts-iii">
                     Kingdom Hearts III
-                    </a>
-        
-            </td>
-</tr>
-
-                                            
-    
-
-<tr class="score_title_row">
-    <td class="score_col">
-                                    
-
-        
-    <a class="metascore_anchor" href="/game/playstation-4/tom-clancys-the-division-2">
-<span class="metascore_w small game positive">82</span>
-    </a>
-
-                        </td>
-    <td class="title_col">
-                    <a class="product_title" href="/game/playstation-4/tom-clancys-the-division-2">
-                    Tom Clancy's The Division 2
                     </a>
         
             </td>
@@ -2500,6 +2411,27 @@ After the first two or three seconds , boom ,your in</span><span class="blurb bl
     <td class="title_col">
                     <a class="product_title" href="/game/playstation-4/hitman-2">
                     Hitman 2
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/tom-clancys-the-division-2">
+<span class="metascore_w small game positive">82</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/tom-clancys-the-division-2">
+                    Tom Clancy's The Division 2
                     </a>
         
             </td>
@@ -2618,6 +2550,27 @@ After the first two or three seconds , boom ,your in</span><span class="blurb bl
                                     
 
         
+    <a class="metascore_anchor" href="/game/playstation-4/my-time-at-portia">
+<span class="metascore_w small game mixed">74</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/my-time-at-portia">
+                    My Time At Portia
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
     <a class="metascore_anchor" href="/game/playstation-4/battlefield-v">
 <span class="metascore_w small game mixed">73</span>
     </a>
@@ -2647,6 +2600,27 @@ After the first two or three seconds , boom ,your in</span><span class="blurb bl
     <td class="title_col">
                     <a class="product_title" href="/game/playstation-4/ride-3">
                     RIDE 3
+                    </a>
+        
+            </td>
+</tr>
+
+                                            
+    
+
+<tr class="score_title_row">
+    <td class="score_col">
+                                    
+
+        
+    <a class="metascore_anchor" href="/game/playstation-4/days-gone">
+<span class="metascore_w small game mixed">72</span>
+    </a>
+
+                        </td>
+    <td class="title_col">
+                    <a class="product_title" href="/game/playstation-4/days-gone">
+                    Days Gone
                     </a>
         
             </td>
@@ -2991,8 +2965,7 @@ After the first two or three seconds , boom ,your in</span><span class="blurb bl
     var MC_UUID = uuid.v1();
 </script>
 
-                                                                                                                                                                                                                                                    
-    
+                                                                                                                                                            
 
  
 <script language="JavaScript" type="text/javascript">
@@ -3051,8 +3024,6 @@ After the first two or three seconds , boom ,your in</span><span class="blurb bl
                     googletag.pubads().setTargeting("game", "batman-arkham-vr");
                     googletag.pubads().setTargeting("con", "playstation-4");
                     googletag.pubads().setTargeting("franchise", "Batman");
-                    googletag.pubads().setTargeting("genre", "action, ");
-                    googletag.pubads().setTargeting("score", "74");
                             googletag.pubads().setTargeting("test", "mcold");
                 
         googletag.pubads().setTargeting("vguid", MC_UUID);
@@ -3106,8 +3077,6 @@ After the first two or three seconds , boom ,your in</span><span class="blurb bl
                     MetaC.Video.setIMATargeting("game", "batman-arkham-vr");
                     MetaC.Video.setIMATargeting("con", "playstation-4");
                     MetaC.Video.setIMATargeting("franchise", "Batman");
-                    MetaC.Video.setIMATargeting("genre", "action, ");
-                    MetaC.Video.setIMATargeting("score", "74");
                     
     }
     
@@ -3276,6 +3245,6 @@ After the first two or three seconds , boom ,your in</span><span class="blurb bl
     
 </div>
 
-<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"860f7644b8","applicationID":"2033002","transactionName":"MgQEZ0dYCxEAVRBbDQtOJUZGTQoPTnEFXwc1EwlXQFoRWFtfClYHHQ==","queueTime":0,"applicationTime":2527,"atts":"HkMTEQ9CGE5DV0YIGRgc","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
+<script type="text/javascript">window.NREUM||(NREUM={});NREUM.info={"beacon":"bam.nr-data.net","licenseKey":"860f7644b8","applicationID":"2033002","transactionName":"MgQEZ0dYCxEAVRBbDQtOJUZGTQoPTnEFXwc1EwlXQFoRWFtfClYHHQ==","queueTime":0,"applicationTime":552,"atts":"HkMTEQ9CGE5DV0YIGRgc","errorBeacon":"bam.nr-data.net","agent":""}</script></body>
 </html>
 
